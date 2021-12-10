@@ -1,27 +1,27 @@
 @font-face {
-	font-family: 'DIN Pro Condensed Bold';
+	font-family: 'DIN Pro Bold';
 	src: url('./fonts/DINPro/DINPro-CondBold.ttf');
-	font-weight: bold;
+	font-weight: normal;
 }
 @font-face {
-	font-family: 'DIN Pro Condensed Regular';
+	font-family: 'DIN Pro';
 	src: url('./fonts/DINPro/DINPro-Cond.ttf');
 	font-weight: normal;
 }
 @font-face {
 	font-family: 'DIN Pro Black';
 	src: url('./fonts/DINPro/DINPro-Black.ttf');
-	font-weight: bold;
+	font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto';
 	src: url('./fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: 'Roboto Condensed Bold';
+	font-family: 'Roboto Bold';
 	src: url('./fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
 	font-weight: normal;
 }
