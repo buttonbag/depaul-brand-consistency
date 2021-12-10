@@ -1,0 +1,70 @@
+#typography section .homepage {
+  color: var(--sec-blue);
+  text-transform: uppercase;
+}
+#typography section h1,
+#typography section h2,
+#typography section h3,
+#typography section h4,
+#typography section h5,
+#typography section h6 {
+  padding: 0.5rem 0;
+  font-family: "DIN Pro Bold";
+  color: var(--pri-blue);
+  line-height: 1.25;
+}
+#typography section h4,
+#typography section h5,
+#typography section h6 {
+  font-family: "Roboto Bold";
+  color: var(--gray);
+}
+#typography section p {
+  font-family: "Roboto";
+  color: var(--gray);
+}
+#typography section a {
+  color: var(--pri-blue);
+}
+#typography section h1 {
+  font-size: 3rem;
+}
+#typography section h2 {
+  font-size: 2.6rem;
+}
+#typography section h3 {
+  font-size: 2.25rem;
+}
+#typography section h4 {
+  font-size: 1.38rem;
+}
+#typography section h5 {
+  font-size: 1.2rem;
+}
+#typography section h6 {
+  font-size: 1rem;
+}
+#typography section p {
+  font-size: 1.32rem;
+}
+#typography span {
+  color: #565656;
+  font-size: 2rem;
+}
+#typography span.din {
+  font-family: "DIN Pro";
+}
+#typography span.din strong {
+  font-family: "DIN Pro Bold";
+}
+#typography span.din.black {
+  font-family: "DIN Pro Black";
+}
+#typography span.roboto {
+  font-family: "Roboto";
+}
+#typography span.roboto strong {
+  font-family: "Roboto Bold";
+}
+
+/*# sourceMappingURL=typography.css.map */
