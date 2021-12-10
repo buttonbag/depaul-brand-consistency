@@ -1,7 +1,17 @@
 @font-face {
-	font-family: 'DIN Pro';
-	src: url('./fonts/DIN_Pro_Font_Family/DIN\ Pro\ Condensed\ Medium\ 500.otf');
+	font-family: 'DIN Pro Condensed Bold';
+	src: url('./fonts/DINPro/DINPro-CondBold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'DIN Pro Condensed Regular';
+	src: url('./fonts/DINPro/DINPro-Cond.ttf');
 	font-weight: normal;
+}
+@font-face {
+	font-family: 'DIN Pro Black';
+	src: url('./fonts/DINPro/DINPro-Black.ttf');
+	font-weight: bold;
 }
 
 @font-face {
