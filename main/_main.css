@@ -1,6 +1,6 @@
-@import url("./colors.css");
-@import url("./fonts.css");
-@import url("./typography.css");
+@import url("./_colors.css");
+@import url("./_fonts.css");
+@import url("./_typography.css");
 @import url("./_containers.css");
 :root {
   --pri-blue: #0057b7;
@@ -54,4 +54,4 @@ main section div h3 {
   padding: 1rem 0;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=_main.css.map */
