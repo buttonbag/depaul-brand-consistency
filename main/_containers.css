@@ -1,0 +1,33 @@
+#containers .container-xl,
+#containers .container-lg,
+#containers .container-md,
+#containers .container-sm,
+#containers .container {
+  border: 1px solid var(--pri-blue);
+  margin: 1rem auto;
+  height: 100px;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+#containers .container-xl {
+  max-width: 1920px;
+}
+#containers .container-xl .row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#containers .container-lg {
+  max-width: 1440px;
+}
+#containers .container-md {
+  max-width: 1200px;
+}
+#containers .container-sm {
+  max-width: 1080px;
+}
+#containers .container {
+  max-width: 900px;
+}
+
+/*# sourceMappingURL=_containers.css.map */

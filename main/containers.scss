@@ -1,0 +1,35 @@
+#containers {
+	.container-xl,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container {
+		border: 1px solid var(--pri-blue);
+		margin: 1rem auto;
+		height: 100px;
+
+		font-family: 'Roboto';
+		font-size: 1.2rem;
+		color: var(--gray);
+	}
+
+	.container-xl {
+		max-width: 1920px;
+		.row {
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+	}
+	.container-lg {
+		max-width: 1440px;
+	}
+	.container-md {
+		max-width: 1200px;
+	}
+	.container-sm {
+		max-width: 1080px;
+	}
+	.container {
+		max-width: 900px;
+	}
+}
