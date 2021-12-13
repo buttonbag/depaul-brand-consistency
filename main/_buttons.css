@@ -2,20 +2,40 @@
   font-family: "Roboto";
   font-size: 1.25rem;
   border-radius: 0;
-  box-shadow: 5px 5px 0 -1px;
-  border: 3px solid;
+  color: var(--white);
 }
 .btn.red {
-  color: var(--red);
+  color: var(--white);
+  background: var(--red);
   border-color: var(--red);
 }
+.btn.red.ghost {
+  box-shadow: 5px 5px 0 -1px;
+  border: 3px solid;
+  background: transparent;
+  color: var(--red);
+}
 .btn.blue {
-  color: var(--pri-blue);
+  color: var(--white);
+  background: var(--pri-blue);
   border-color: var(--pri-blue);
 }
+.btn.blue.ghost {
+  box-shadow: 5px 5px 0 -1px;
+  border: 3px solid;
+  background: transparent;
+  color: var(--pri-blue);
+}
 .btn.blue.dark {
-  color: var(--sec-blue);
+  color: var(--white);
+  background: var(--sec-blue);
   border-color: var(--sec-blue);
+}
+.btn.blue.dark.ghost {
+  box-shadow: 5px 5px 0 -1px;
+  border: 3px solid;
+  background: transparent;
+  color: var(--sec-blue);
 }
 
 /*# sourceMappingURL=_buttons.css.map */
