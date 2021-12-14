@@ -52,7 +52,6 @@
     padding: 0;
     flex: 0 0 auto;
     max-width: 60%;
-    background: rgba(var(--pri-blue), 1);
   }
 }
 @media screen and (max-width: 414px) {
@@ -61,7 +60,7 @@
   }
 }
 #hero-container #text-content .hero-text .hero-content .hero-title {
-  background: rgba(var(--pri-blue), 1);
+  background: rgba(var(--pri-blue), 0.5);
   z-index: 100;
   position: relative;
   padding: 3rem 1.5rem;
@@ -205,4 +204,4 @@
   }
 }
 
-/*# sourceMappingURL=_unique-homepage-elem.css.map */
+/*# sourceMappingURL=_uhe.css.map */

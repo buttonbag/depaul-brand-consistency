@@ -54,13 +54,12 @@ $screen-sm: 414px;
 					padding: 0;
 					flex: 0 0 auto;
 					max-width: 60%;
-					background: rgba(var(--pri-blue), 1);
 				}
 				@include screen-max($screen-sm) {
 					max-width: 100%;
 				}
 				.hero-title {
-					background: rgba(var(--pri-blue), 1);
+					background: rgba(var(--pri-blue), 0.5);
 					z-index: 100;
 					position: relative;
 					padding: 3rem 1.5rem;
@@ -142,12 +141,6 @@ $screen-sm: 414px;
 				font-size: 1rem;
 			}
 		}
-		// .btn {
-		// 	color: rgba(var(--red), 1);
-		// 	border: 3px solid rgba(var(--red), 1);
-		// 	box-shadow: 3px 3px rgba(var(--red), 1);
-		// 	border-radius: 0;
-		// }
 	}
 }
 .img-right {

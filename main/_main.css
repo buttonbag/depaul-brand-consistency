@@ -3,7 +3,7 @@
 @import url("./_typography.css");
 @import url("./_containers.css");
 @import url("./_buttons.css");
-@import url("./_unique-homepage-elem.css");
+@import url("./_uhe.css");
 :root {
   --pri-blue: 0, 87, 183;
   --sec-blue: 14, 65, 116;
