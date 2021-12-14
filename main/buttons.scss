@@ -1,40 +1,48 @@
 // #buttons
+@mixin color($color) {
+	background: $color;
+	color: var(--white);
+}
+@mixin ghost($color) {
+	box-shadow: 5px 5px 0 -1px $color;
+	border: 3px solid $color;
+	background: transparent;
+	color: $color;
+}
+@mixin hover($color) {
+	background: $color;
+	color: var(--white);
+}
+
 .btn {
 	font-family: 'Roboto';
 	font-size: 1.25rem;
 	border-radius: 0;
-	color: var(--white);
 
 	&.red {
-		color: var(--white);
-		background: var(--red);
-		border-color: var(--red);
+		@include color(var(--red));
 		&.ghost {
-			box-shadow: 5px 5px 0 -1px;
-			border: 3px solid;
-			background: transparent;
-			color: var(--red);
+			@include ghost(var(--red));
+			&:hover {
+				@include hover(var(--red));
+			}
 		}
 	}
 	&.blue {
-		color: var(--white);
-		background: var(--pri-blue);
-		border-color: var(--pri-blue);
+		@include color(var(--pri-blue));
 		&.ghost {
-			box-shadow: 5px 5px 0 -1px;
-			border: 3px solid;
-			background: transparent;
-			color: var(--pri-blue);
+			@include ghost(var(--pri-blue));
+			&:hover {
+				@include hover(var(--pri-blue));
+			}
 		}
 		&.dark {
-			color: var(--white);
-			background: var(--sec-blue);
-			border-color: var(--sec-blue);
+			@include color(var(--sec-blue));
 			&.ghost {
-				box-shadow: 5px 5px 0 -1px;
-				border: 3px solid;
-				background: transparent;
-				color: var(--sec-blue);
+				@include ghost(var(--sec-blue));
+				&:hover {
+					@include hover(var(--sec-blue));
+				}
 			}
 		}
 	}
