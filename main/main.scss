@@ -1,10 +1,10 @@
 // root
 :root {
-	--pri-blue: #0057b7;
-	--sec-blue: #0e4174;
-	--red: #af272f;
-	--white: #ffffff;
-	--gray: #565656;
+	--pri-blue: 0, 87, 183;
+	--sec-blue: 14, 65, 116;
+	--red: 175, 39, 47;
+	--white: 255, 255, 255;
+	--gray: 86, 86, 86;
 }
 
 // base rules
@@ -25,17 +25,17 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	color: var(--pri-blue);
+	color: rgba(var(--pri-blue), 1);
 	font-family: 'Roboto';
 }
 
 // layout rules
 main {
-	background: var(--white);
+	background: rgba(var(--white), 1);
 	padding: 10px 0;
 	section {
 		header {
-			border-bottom: 1px solid var(--red);
+			border-bottom: 1px solid rgba(var(--red), 1);
 			padding: 1rem 0;
 			h2 {
 				font-size: 1.8rem;

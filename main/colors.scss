@@ -8,25 +8,25 @@
 		}
 
 		&.pri-blue {
-			color: var(--white);
-			background: var(--pri-blue);
+			color: rgba(var(--white), 1);
+			background: rgba(var(--pri-blue), 1);
 		}
 		&.sec-blue {
-			color: var(--white);
-			background: var(--sec-blue);
+			color: rgba(var(--white), 1);
+			background: rgba(var(--sec-blue), 1);
 		}
 		&.red {
-			color: var(--white);
-			background: var(--red);
+			color: rgba(var(--white), 1);
+			background: rgba(var(--red), 1);
 		}
 		&.white {
-			color: var(--pri-blue);
-			background: var(--white);
-			border: 1px solid var(--pri-blue);
+			color: rgba(var(--pri-blue), 1);
+			background: rgba(var(--white), 1);
+			border: 1px solid rgba(var(--pri-blue), 1);
 		}
 		&.gray {
-			color: var(--white);
-			background: var(--gray);
+			color: rgba(var(--white), 1);
+			background: rgba(var(--gray), 1);
 		}
 	}
 	.text {
@@ -37,24 +37,24 @@
 			margin-left: 20px;
 		}
 		&.pri-blue {
-			border-color: var(--pri-blue);
-			color: var(--pri-blue);
+			border-color: rgba(var(--pri-blue), 1);
+			color: rgba(var(--pri-blue), 1);
 		}
 		&.red {
-			border-color: var(--red);
-			color: var(--red);
+			border-color: rgba(var(--red), 1);
+			color: rgba(var(--red), 1);
 		}
 		&.sec-blue {
-			border-color: var(--sec-blue);
-			color: var(--sec-blue);
+			border-color: rgba(var(--sec-blue), 1);
+			color: rgba(var(--sec-blue), 1);
 		}
 		&.gray {
-			border-color: var(--gray);
-			color: var(--gray);
+			border-color: rgba(var(--gray), 1);
+			color: rgba(var(--gray), 1);
 		}
 		&.white {
-			background: var(--pri-blue);
-			color: var(--white);
+			background: rgba(var(--pri-blue), 1);
+			color: rgba(var(--white), 1);
 		}
 	}
 }

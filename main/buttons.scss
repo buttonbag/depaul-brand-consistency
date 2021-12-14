@@ -1,7 +1,7 @@
 // #buttons
 @mixin color($color) {
 	background: $color;
-	color: var(--white);
+	color: rgba(var(--white), 1);
 }
 @mixin ghost($color) {
 	box-shadow: 5px 5px 0 -1px $color;
@@ -11,7 +11,7 @@
 }
 @mixin hover($color) {
 	background: $color;
-	color: var(--white);
+	color: rgba(var(--white), 1);
 }
 
 .btn {
@@ -20,28 +20,28 @@
 	border-radius: 0;
 
 	&.red {
-		@include color(var(--red));
+		@include color(rgba(var(--red), 1));
 		&.ghost {
-			@include ghost(var(--red));
+			@include ghost(rgba(var(--red), 1));
 			&:hover {
-				@include hover(var(--red));
+				@include hover(rgba(var(--red), 1));
 			}
 		}
 	}
 	&.blue {
-		@include color(var(--pri-blue));
+		@include color(rgba(var(--pri-blue), 1));
 		&.ghost {
-			@include ghost(var(--pri-blue));
+			@include ghost(rgba(var(--pri-blue), 1));
 			&:hover {
-				@include hover(var(--pri-blue));
+				@include hover(rgba(var(--pri-blue), 1));
 			}
 		}
 		&.dark {
-			@include color(var(--sec-blue));
+			@include color(rgba(var(--sec-blue), 1));
 			&.ghost {
-				@include ghost(var(--sec-blue));
+				@include ghost(rgba(var(--sec-blue), 1));
 				&:hover {
-					@include hover(var(--sec-blue));
+					@include hover(rgba(var(--sec-blue), 1));
 				}
 			}
 		}

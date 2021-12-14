@@ -3,12 +3,12 @@
 #containers .container-md,
 #containers .container-sm,
 #containers .container {
-  border: 1px solid var(--pri-blue);
+  border: 1px solid rgba(var(--pri-blue), 1);
   margin: 1rem auto;
   height: 100px;
   font-family: "Roboto";
   font-size: 1.2rem;
-  color: var(--gray);
+  color: rgba(var(--gray), 1);
 }
 #containers .container-xl {
   max-width: 1920px;

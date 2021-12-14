@@ -4,46 +4,46 @@
   border-radius: 0;
 }
 .btn.red {
-  background: var(--red);
-  color: var(--white);
+  background: rgba(var(--red), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.red.ghost {
-  box-shadow: 5px 5px 0 -1px var(--red);
-  border: 3px solid var(--red);
+  box-shadow: 5px 5px 0 -1px rgba(var(--red), 1);
+  border: 3px solid rgba(var(--red), 1);
   background: transparent;
-  color: var(--red);
+  color: rgba(var(--red), 1);
 }
 .btn.red.ghost:hover {
-  background: var(--red);
-  color: var(--white);
+  background: rgba(var(--red), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.blue {
-  background: var(--pri-blue);
-  color: var(--white);
+  background: rgba(var(--pri-blue), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.blue.ghost {
-  box-shadow: 5px 5px 0 -1px var(--pri-blue);
-  border: 3px solid var(--pri-blue);
+  box-shadow: 5px 5px 0 -1px rgba(var(--pri-blue), 1);
+  border: 3px solid rgba(var(--pri-blue), 1);
   background: transparent;
-  color: var(--pri-blue);
+  color: rgba(var(--pri-blue), 1);
 }
 .btn.blue.ghost:hover {
-  background: var(--pri-blue);
-  color: var(--white);
+  background: rgba(var(--pri-blue), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.blue.dark {
-  background: var(--sec-blue);
-  color: var(--white);
+  background: rgba(var(--sec-blue), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.blue.dark.ghost {
-  box-shadow: 5px 5px 0 -1px var(--sec-blue);
-  border: 3px solid var(--sec-blue);
+  box-shadow: 5px 5px 0 -1px rgba(var(--sec-blue), 1);
+  border: 3px solid rgba(var(--sec-blue), 1);
   background: transparent;
-  color: var(--sec-blue);
+  color: rgba(var(--sec-blue), 1);
 }
 .btn.blue.dark.ghost:hover {
-  background: var(--sec-blue);
-  color: var(--white);
+  background: rgba(var(--sec-blue), 1);
+  color: rgba(var(--white), 1);
 }
 
 /*# sourceMappingURL=_buttons.css.map */

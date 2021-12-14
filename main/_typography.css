@@ -1,5 +1,5 @@
 #typography section .homepage {
-  color: var(--sec-blue);
+  color: rgba(var(--sec-blue), 1);
   text-transform: uppercase;
 }
 #typography section h1,
@@ -10,21 +10,21 @@
 #typography section h6 {
   padding: 0.5rem 0;
   font-family: "DIN Pro Bold";
-  color: var(--pri-blue);
+  color: rgba(var(--pri-blue), 1);
   line-height: 1.25;
 }
 #typography section h4,
 #typography section h5,
 #typography section h6 {
   font-family: "Roboto Bold";
-  color: var(--gray);
+  color: rgba(var(--gray), 1);
 }
 #typography section p {
   font-family: "Roboto";
-  color: var(--gray);
+  color: rgba(var(--gray), 1);
 }
 #typography section a {
-  color: var(--pri-blue);
+  color: rgba(var(--pri-blue), 1);
 }
 #typography section h1 {
   font-size: 3rem;

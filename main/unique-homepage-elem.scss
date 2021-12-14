@@ -38,9 +38,10 @@ $screen-sm: 414px;
 			padding: 0;
 		}
 		.hero-text {
+			max-width: 1440px;
+			margin: 0 auto;
 			@include screen-max($screen-md) {
 				padding: 0;
-				justify-content: stretch !important;
 				max-width: 100%;
 				flex-wrap: nowrap;
 			}
@@ -53,19 +54,19 @@ $screen-sm: 414px;
 					padding: 0;
 					flex: 0 0 auto;
 					max-width: 60%;
-					background: var(--pri-blue);
+					background: rgba(var(--pri-blue), 1);
 				}
 				@include screen-max($screen-sm) {
 					max-width: 100%;
 				}
 				.hero-title {
-					background: var(--pri-blue);
+					background: rgba(var(--pri-blue), 1);
 					z-index: 100;
 					position: relative;
 					padding: 3rem 1.5rem;
 					@include screen-max($screen-md) {
 						width: 100%;
-						background: var(--pri-blue);
+						background: rgba(var(--pri-blue), 1);
 					}
 					h1 {
 						font-family: 'DIN Pro';
@@ -87,13 +88,14 @@ $screen-sm: 414px;
 			font-family: 'DIN Pro';
 			font-weight: normal;
 			font-size: 1.75rem;
-			background: var(--sec-blue);
+			background: rgba(var(--sec-blue), 1);
 			z-index: 80;
 			position: relative;
 			display: flex;
 			align-items: end;
 			height: 320px;
 			color: #fff;
+			padding: 2rem;
 			@include screen-max($screen-lg) {
 				font-size: 1.5rem;
 			}
@@ -128,22 +130,22 @@ $screen-sm: 414px;
 		h2 {
 			font-family: 'DIN Pro';
 			font-size: 2.63rem;
-			color: var(--pri-blue);
+			color: rgba(var(--pri-blue), 1);
 			@include screen-max($screen-sm) {
 				font-size: 2rem;
 			}
 		}
 		p {
 			font-size: 1.3rem;
-			color: var(--gray);
+			color: rgba(var(--gray), 1);
 			@include screen-max($screen-sm) {
 				font-size: 1rem;
 			}
 		}
 		// .btn {
-		// 	color: var(--red);
-		// 	border: 3px solid var(--red);
-		// 	box-shadow: 3px 3px var(--red);
+		// 	color: rgba(var(--red), 1);
+		// 	border: 3px solid rgba(var(--red), 1);
+		// 	box-shadow: 3px 3px rgba(var(--red), 1);
 		// 	border-radius: 0;
 		// }
 	}
