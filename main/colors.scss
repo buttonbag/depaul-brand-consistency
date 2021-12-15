@@ -18,24 +18,24 @@
 		&:nth-child(1n + 2) {
 			margin-left: 20px;
 		}
+	}
+}
 
-		&.dpu-bg {
-			&-blue {
-				@include bg(var(--pri-blue));
-			}
-			&-dark-blue {
-				@include bg(var(--sec-blue));
-			}
-			&-red {
-				@include bg(var(--red));
-			}
-			&-white {
-				@include bg(var(--white));
-			}
-			&-gray {
-				@include bg(var(--gray));
-			}
-		}
+.dpu-bg {
+	&-blue {
+		@include bg(var(--pri-blue));
+	}
+	&-dark-blue {
+		@include bg(var(--sec-blue));
+	}
+	&-red {
+		@include bg(var(--red));
+	}
+	&-white {
+		@include bg(var(--white));
+	}
+	&-gray {
+		@include bg(var(--gray));
 	}
 }
 .text {
