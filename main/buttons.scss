@@ -18,6 +18,7 @@
 	font-family: 'Roboto';
 	font-size: 1.25rem;
 	border-radius: 0;
+	@include color(var(--pri-blue));
 
 	&.red {
 		@include color(var(--red));

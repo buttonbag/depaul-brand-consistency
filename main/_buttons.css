@@ -2,6 +2,8 @@
   font-family: "Roboto";
   font-size: 1.25rem;
   border-radius: 0;
+  background: rgba(var(--pri-blue), 1);
+  color: rgba(var(--white), 1);
 }
 .btn.red {
   background: rgba(var(--red), 1);
