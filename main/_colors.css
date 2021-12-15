@@ -1,58 +1,67 @@
-#colors .color-chip {
+.bc-palette .bc-color-chip,
+.bc-backgrounds .bc-color-chip,
+.bc-text .bc-color-chip {
   text-align: center;
   padding: 3rem;
 }
-#colors .color-chip:nth-child(1n+2) {
+.bc-palette .bc-color-chip:nth-child(1n+2),
+.bc-backgrounds .bc-color-chip:nth-child(1n+2),
+.bc-text .bc-color-chip:nth-child(1n+2) {
   margin-left: 20px;
 }
-#colors .color-chip.pri-blue {
-  color: rgba(var(--white), 1);
+.bc-palette .bc-color-chip.dpu-bg-blue,
+.bc-backgrounds .bc-color-chip.dpu-bg-blue,
+.bc-text .bc-color-chip.dpu-bg-blue {
   background: rgba(var(--pri-blue), 1);
 }
-#colors .color-chip.sec-blue {
-  color: rgba(var(--white), 1);
+.bc-palette .bc-color-chip.dpu-bg-dark-blue,
+.bc-backgrounds .bc-color-chip.dpu-bg-dark-blue,
+.bc-text .bc-color-chip.dpu-bg-dark-blue {
   background: rgba(var(--sec-blue), 1);
 }
-#colors .color-chip.red {
-  color: rgba(var(--white), 1);
+.bc-palette .bc-color-chip.dpu-bg-red,
+.bc-backgrounds .bc-color-chip.dpu-bg-red,
+.bc-text .bc-color-chip.dpu-bg-red {
   background: rgba(var(--red), 1);
 }
-#colors .color-chip.white {
-  color: rgba(var(--pri-blue), 1);
+.bc-palette .bc-color-chip.dpu-bg-white,
+.bc-backgrounds .bc-color-chip.dpu-bg-white,
+.bc-text .bc-color-chip.dpu-bg-white {
   background: rgba(var(--white), 1);
-  border: 1px solid rgba(var(--pri-blue), 1);
 }
-#colors .color-chip.gray {
-  color: rgba(var(--white), 1);
+.bc-palette .bc-color-chip.dpu-bg-gray,
+.bc-backgrounds .bc-color-chip.dpu-bg-gray,
+.bc-text .bc-color-chip.dpu-bg-gray {
   background: rgba(var(--gray), 1);
 }
-#colors .text {
-  text-align: center;
-  padding: 3rem;
-  border: 1px solid;
-}
-#colors .text:nth-child(1n+2) {
-  margin-left: 20px;
-}
-#colors .text.pri-blue {
-  border-color: rgba(var(--pri-blue), 1);
+
+.text-blue {
   color: rgba(var(--pri-blue), 1);
 }
-#colors .text.red {
-  border-color: rgba(var(--red), 1);
+.text-red {
   color: rgba(var(--red), 1);
 }
-#colors .text.sec-blue {
-  border-color: rgba(var(--sec-blue), 1);
+.text-dark-blue {
   color: rgba(var(--sec-blue), 1);
 }
-#colors .text.gray {
-  border-color: rgba(var(--gray), 1);
+.text-gray {
   color: rgba(var(--gray), 1);
 }
-#colors .text.white {
-  background: rgba(var(--pri-blue), 1);
+.text-white {
   color: rgba(var(--white), 1);
+}
+
+.border-blue {
+  border: 1px solid rgba(var(--pri-blue));
+}
+.border-dark-blue {
+  border: 1px solid rgba(var(--sec-blue));
+}
+.border-red {
+  border: 1px solid rgba(var(--red));
+}
+.border-gray {
+  border: 1px solid rgba(var(--gray));
 }
 
 /*# sourceMappingURL=_colors.css.map */

@@ -54,6 +54,7 @@ $screen-sm: 414px;
 					padding: 0;
 					flex: 0 0 auto;
 					max-width: 60%;
+					background: rgba(var(--pri-blue), 1);
 				}
 				@include screen-max($screen-sm) {
 					max-width: 100%;
@@ -106,6 +107,9 @@ $screen-sm: 414px;
 			}
 			@include screen-max($screen-sm) {
 				max-width: 100% !important;
+			}
+			div {
+				padding-top: 8rem;
 			}
 			p {
 				margin: 0;

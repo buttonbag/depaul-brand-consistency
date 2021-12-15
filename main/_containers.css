@@ -1,8 +1,4 @@
-#containers .container-xl,
-#containers .container-lg,
-#containers .container-md,
-#containers .container-sm,
-#containers .container {
+.container-xl, .container-lg, .container-md, .container-sm, .container-xs {
   border: 1px solid rgba(var(--pri-blue), 1);
   margin: 1rem auto;
   height: 100px;
@@ -10,23 +6,19 @@
   font-size: 1.2rem;
   color: rgba(var(--gray), 1);
 }
-#containers .container-xl {
+.container-xl {
   max-width: 1920px;
 }
-#containers .container-xl .row {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-#containers .container-lg {
+.container-lg {
   max-width: 1440px;
 }
-#containers .container-md {
+.container-md {
   max-width: 1200px;
 }
-#containers .container-sm {
+.container-sm {
   max-width: 1080px;
 }
-#containers .container {
+.container-xs {
   max-width: 900px;
 }
 

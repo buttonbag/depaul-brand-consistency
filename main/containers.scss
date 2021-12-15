@@ -1,35 +1,30 @@
-#containers {
-	.container-xl,
-	.container-lg,
-	.container-md,
-	.container-sm,
-	.container {
+.container {
+	&-xl,
+	&-lg,
+	&-md,
+	&-sm,
+	&-xs {
 		border: 1px solid rgba(var(--pri-blue), 1);
 		margin: 1rem auto;
 		height: 100px;
-
 		font-family: 'Roboto';
 		font-size: 1.2rem;
 		color: rgba(var(--gray), 1);
 	}
 
-	.container-xl {
+	&-xl {
 		max-width: 1920px;
-		.row {
-			max-width: 1440px;
-			margin: 0 auto;
-		}
 	}
-	.container-lg {
+	&-lg {
 		max-width: 1440px;
 	}
-	.container-md {
+	&-md {
 		max-width: 1200px;
 	}
-	.container-sm {
+	&-sm {
 		max-width: 1080px;
 	}
-	.container {
+	&-xs {
 		max-width: 900px;
 	}
 }

@@ -52,6 +52,7 @@
     padding: 0;
     flex: 0 0 auto;
     max-width: 60%;
+    background: rgba(var(--pri-blue), 1);
   }
 }
 @media screen and (max-width: 414px) {
@@ -118,6 +119,9 @@
   #hero-container #text-content .cta {
     max-width: 100% !important;
   }
+}
+#hero-container #text-content .cta div {
+  padding-top: 8rem;
 }
 #hero-container #text-content .cta p {
   margin: 0;

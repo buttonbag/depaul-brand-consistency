@@ -15,46 +15,64 @@
 	<body>
 		<main>
 			<section id="title">
-				<header id="main">
-					<h1>DePaul University Design System</h1>
+				<header id="main-header">
+					<div class="container">
+						<h1>DePaul University Design System</h1>
+					</div>
 				</header>
 			</section>
 
 			<section id="colors">
-				<header><h2>Colors</h2></header>
-				<div>
-					<h3>Pallete:</h3>
-					<div class="d-flex">
-						<div class="color-chip pri-blue">#0057b7</div>
-						<div class="color-chip sec-blue">#0057b7</div>
-						<div class="color-chip red">#0057b7</div>
-						<div class="color-chip white">#0057b7</div>
-						<div class="color-chip gray">#0057b7</div>
+				<header>
+					<div class="container">
+						<h2>Colors</h2>
+					</div>
+				</header>
+				<div class="container">
+					<h3>Palette:</h3>
+					<div class="d-flex bc-palette">
+						<div class="bc-color-chip dpu-bg-blue text-white">#0057b7</div>
+						<div class="bc-color-chip dpu-bg-dark-blue text-white">#0057b7</div>
+						<div class="bc-color-chip dpu-bg-red text-white">#0057b7</div>
+						<div class="bc-color-chip dpu-bg-white border-blue text-blue">
+							#0057b7
+						</div>
+						<div class="bc-color-chip dpu-bg-gray text-white">#0057b7</div>
 					</div>
 				</div>
-				<div>
+				<div class="container">
 					<h3>Backgrounds:</h3>
-					<div class="d-flex">
-						<div class="color-chip pri-blue">Blue</div>
-						<div class="color-chip sec-blue">Dark Blue</div>
-						<div class="color-chip white">White<br />1 px border</div>
+					<div class="d-flex bc-backgrounds">
+						<div class="bc-color-chip dpu-bg-blue text-white">Blue</div>
+						<div class="bc-color-chip dpu-bg-dark-blue text-white">
+							Dark Blue
+						</div>
+						<div class="bc-color-chip dpu-bg-white border-blue text-blue">
+							White<br />1 px border
+						</div>
 					</div>
 				</div>
-				<div>
+				<div class="container">
 					<h3>Text:</h3>
-					<div class="d-flex">
-						<div class="text pri-blue">Blue Text</div>
-						<div class="text red">Red Text</div>
-						<div class="text sec-blue">Dark Blue Text</div>
-						<div class="text gray">Gray Text</div>
-						<div class="text white">White Text</div>
+					<div class="d-flex bc-text">
+						<div class="bc-color-chip border-blue text-blue">Blue Text</div>
+						<div class="bc-color-chip border-red text-red">Red Text</div>
+						<div class="bc-color-chip border-dark-blue text-dark-blue">
+							Dark Blue Text
+						</div>
+						<div class="bc-color-chip border-gray text-gray">Gray Text</div>
+						<div class="bc-color-chip dpu-bg-blue text-white">White Text</div>
 					</div>
 				</div>
 			</section>
 
 			<section id="typography">
-				<header><h2>Typography</h2></header>
-				<div>
+				<header>
+					<div class="container">
+						<h2>Typography</h2>
+					</div>
+				</header>
+				<div class="container">
 					<h3>Font Stacks:</h3>
 					<div class="d-flex flex-wrap">
 						<span class="din"><strong>Din Pro Condensed Bold</strong></span>
@@ -64,7 +82,7 @@
 						<span class="roboto">Roboto Condensed Regular</span>
 					</div>
 				</div>
-				<div>
+				<div class="container">
 					<h3>Headers:</h3>
 					<section>
 						<h1 class="homepage">Homepage h1</h1>
@@ -83,7 +101,11 @@
 			</section>
 
 			<section id="containers">
-				<header><h2>Containers</h2></header>
+				<header>
+					<div class="container">
+						<h2>Containers</h2>
+					</div>
+				</header>
 				<section>
 					<div class="container-xl">
 						<div class="row">Container 1920px</div>
@@ -97,41 +119,57 @@
 					<div class="container-sm">
 						<div class="row">Container 1080px</div>
 					</div>
-					<div class="container"><div class="row">Container 900px</div></div>
+					<div class="container-xs"><div class="row">Container 900px</div></div>
 				</section>
 			</section>
 
 			<section id="chrome">
-				<header><h2>Chrome</h2></header>
+				<header>
+					<div class="container">
+						<h2>Chrome</h2>
+					</div>
+				</header>
 			</section>
 
 			<section id="buttons">
-				<header><h2>Buttons</h2></header>
-				<section class="d-flex flex-column">
-					<p class="pb-3">
-						<a href="#" class="btn ghost red">Ghost-red CTA</a>
-					</p>
-					<p class="pb-3">
-						<a href="#" class="btn ghost blue">Ghost-blue CTA</a>
-					</p>
-					<p class="pb-3">
-						<a href="#" class="btn ghost blue dark">Ghost-blue--dark CTA</a>
-					</p>
-					<p class="pb-3">
-						<a href="#" class="btn red">Ghost-red CTA</a>
-					</p>
-					<p class="pb-3">
-						<a href="#" class="btn blue">Ghost-blue CTA</a>
-					</p>
-					<p class="pb-3">
-						<a href="#" class="btn blue dark">Ghost-blue--dark CTA</a>
-					</p>
-				</section>
+				<header>
+					<div class="container">
+						<h2>Buttons</h2>
+					</div>
+				</header>
+				<div class="container">
+					<div class="row">
+						<section class="d-flex flex-column">
+							<p class="pb-3">
+								<a href="#" class="btn ghost red">Ghost-red CTA</a>
+							</p>
+							<p class="pb-3">
+								<a href="#" class="btn ghost blue">Ghost-blue CTA</a>
+							</p>
+							<p class="pb-3">
+								<a href="#" class="btn ghost blue dark">Ghost-blue--dark CTA</a>
+							</p>
+							<p class="pb-3">
+								<a href="#" class="btn red">Ghost-red CTA</a>
+							</p>
+							<p class="pb-3">
+								<a href="#" class="btn blue">Ghost-blue CTA</a>
+							</p>
+							<p class="pb-3">
+								<a href="#" class="btn blue dark">Ghost-blue--dark CTA</a>
+							</p>
+						</section>
+					</div>
+				</div>
 			</section>
 
 			<section id="unique-homepage-elements">
-				<header><h2>Unique Homepage Elements</h2></header>
-				<div>
+				<header>
+					<div class="container">
+						<h2>Unique Homepage Elements</h2>
+					</div>
+				</header>
+				<div class="container">
 					<h3>Hero Area:</h3>
 					<!-- hero-container -->
 					<section id="hero-container">
@@ -139,8 +177,8 @@
 
 						<!-- text content -->
 						<div id="text-content">
-							<div class="hero-text d-flex justify-content-between">
-								<div class="hero-content col-md-6">
+							<div class="hero-text d-flex justify-content-around">
+								<div class="hero-content col-md-6 d-flex align-items-start">
 									<div class="hero-title">
 										<h1>Lorem ipsum dolor sit amet consectetur.</h1>
 									</div>
@@ -160,48 +198,58 @@
 					</section>
 					<!-- end hero-container -->
 
-					<h3>Triangle One:</h3>
-					<section id="triangle-one">
-						<section class="triangles img-right row flex-row-reverse">
-							<div class="col-md-6 col-sm-12 d-flex justify-content-center p-0">
-								<span class="image-content container-fluid"></span>
-							</div>
-							<div class="col-md-6 col-sm-12 p-0">
-								<div class="text d-flex flex-column align-items-center">
-									<h2>Heading</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									</p>
-									<a href="#" class="btn ghost red">Learn more </a>
+					<div class="container">
+						<h3>Triangle One:</h3>
+						<section id="triangle-one">
+							<section class="triangles img-right row flex-row-reverse">
+								<div
+									class="col-md-6 col-sm-12 d-flex justify-content-center p-0"
+								>
+									<span class="image-content container-fluid"></span>
 								</div>
-							</div>
-						</section>
-						<section class="triangles img-left row">
-							<div class="col-md-6 col-sm-12 d-flex justify-content-center p-0">
-								<span class="image-content container-fluid"></span>
-							</div>
-							<div class="col-md-6 col-sm-12 p-0">
-								<div class="text d-flex flex-column align-items-center">
-									<h2>Heading</h2>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-										do eiusmod tempor incididunt ut labore et dolore magna
-										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-										ullamco laboris nisi ut aliquip ex ea commodo consequat.
-									</p>
-									<a href="#" class="btn ghost red">Learn more </a>
+								<div class="col-md-6 col-sm-12 p-0">
+									<div class="text d-flex flex-column align-items-center">
+										<h2>Heading</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<a href="#" class="btn ghost red">Learn more </a>
+									</div>
 								</div>
-							</div>
+							</section>
+							<section class="triangles img-left row">
+								<div
+									class="col-md-6 col-sm-12 d-flex justify-content-center p-0"
+								>
+									<span class="image-content container-fluid"></span>
+								</div>
+								<div class="col-md-6 col-sm-12 p-0">
+									<div class="text d-flex flex-column align-items-center">
+										<h2>Heading</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										</p>
+										<a href="#" class="btn ghost red">Learn more </a>
+									</div>
+								</div>
+							</section>
 						</section>
-					</section>
+					</div>
 				</div>
 			</section>
 
 			<section id="panel-objects">
-				<header><h2>Panel Objects</h2></header>
+				<header>
+					<div class="container">
+						<h2>Panel Objects</h2>
+					</div>
+				</header>
 			</section>
 		</main>
 	</body>
