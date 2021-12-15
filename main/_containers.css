@@ -1,7 +1,5 @@
 .container-xl, .container-lg, .container-md, .container-sm, .container-xs {
-  border: 1px solid rgba(var(--pri-blue), 1);
   margin: 1rem auto;
-  height: 100px;
   font-family: "Roboto";
   font-size: 1.2rem;
   color: rgba(var(--gray), 1);
@@ -20,6 +18,10 @@
 }
 .container-xs {
   max-width: 900px;
+}
+
+#containers .container-xl, #containers .container-lg, #containers .container-md, #containers .container-sm, #containers .container-xs {
+  height: 100px;
 }
 
 /*# sourceMappingURL=_containers.css.map */
