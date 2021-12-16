@@ -1,0 +1,14 @@
+// web parts
+
+//footer
+.footer {
+	background: rgba(var(--sec-blue));
+	text-align: center;
+	color: #d3d3d3 !important;
+	margin-top: 0 !important;
+	padding-bottom: 0;
+	a,
+	p {
+		color: rgba(var(--white));
+	}
+}

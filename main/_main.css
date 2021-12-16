@@ -5,6 +5,7 @@
 @import url("./_buttons.css");
 @import url("./_uhe.css");
 @import url("./_panels.css");
+@import url("./_webparts.css");
 :root {
   --pri-blue: 0, 87, 183;
   --sec-blue: 14, 65, 116;
