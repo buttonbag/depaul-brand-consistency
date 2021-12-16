@@ -10,10 +10,12 @@
   color: rgba(var(--white), 1);
 }
 .btn.white-ghost {
-  box-shadow: 5px 5px 0 -1px rgba(var(--white), 1);
   border: 3px solid rgba(var(--white), 1);
   background: transparent;
   color: rgba(var(--white), 1);
+}
+.btn.white-ghost.-shadow {
+  box-shadow: 5px 5px 0 -1px rgba(var(--white), 1) !important;
 }
 .btn.white-ghost:hover {
   background: rgba(var(--white), 1);
@@ -26,10 +28,12 @@
   color: rgba(var(--white), 1);
 }
 .btn.red-ghost {
-  box-shadow: 5px 5px 0 -1px rgba(var(--red), 1);
   border: 3px solid rgba(var(--red), 1);
   background: transparent;
   color: rgba(var(--red), 1);
+}
+.btn.red-ghost.-shadow {
+  box-shadow: 5px 5px 0 -1px rgba(var(--red), 1) !important;
 }
 .btn.red-ghost:hover {
   background: rgba(var(--red), 1);
@@ -40,10 +44,12 @@
   color: rgba(var(--white), 1);
 }
 .btn.blue-ghost {
-  box-shadow: 5px 5px 0 -1px rgba(var(--pri-blue), 1);
   border: 3px solid rgba(var(--pri-blue), 1);
   background: transparent;
   color: rgba(var(--pri-blue), 1);
+}
+.btn.blue-ghost.-shadow {
+  box-shadow: 5px 5px 0 -1px rgba(var(--pri-blue), 1) !important;
 }
 .btn.blue-ghost:hover {
   background: rgba(var(--pri-blue), 1);
@@ -54,10 +60,12 @@
   color: rgba(var(--white), 1);
 }
 .btn.blue-dark-ghost {
-  box-shadow: 5px 5px 0 -1px rgba(var(--sec-blue), 1);
   border: 3px solid rgba(var(--sec-blue), 1);
   background: transparent;
   color: rgba(var(--sec-blue), 1);
+}
+.btn.blue-dark-ghost.-shadow {
+  box-shadow: 5px 5px 0 -1px rgba(var(--sec-blue), 1) !important;
 }
 .btn.blue-dark-ghost:hover {
   background: rgba(var(--sec-blue), 1);

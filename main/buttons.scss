@@ -4,11 +4,14 @@
 	color: rgba(var(--white), 1);
 }
 @mixin ghost($color) {
-	box-shadow: 5px 5px 0 -1px rgba($color, 1);
 	border: 3px solid rgba($color, 1);
 	background: transparent;
 	color: rgba($color, 1);
+	&.-shadow {
+		box-shadow: 5px 5px 0 -1px rgba($color, 1) !important;
+	}
 }
+
 @mixin hover($color) {
 	background: rgba($color, 1);
 	color: rgba(var(--white), 1);
