@@ -8,6 +8,13 @@
 }
 
 // base rules
+@mixin h($size) {
+	margin: 0;
+	color: rgba(var(--pri-blue), 1);
+	font-family: 'Roboto';
+	font-size: $size;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -18,15 +25,26 @@ body {
 	margin: 0;
 	font-size: 16px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-	color: rgba(var(--pri-blue), 1);
-	font-family: 'Roboto';
+
+.bc-h {
+	&1 {
+		@include h(52px);
+	}
+	&2 {
+		@include h(48px);
+	}
+	&3 {
+		@include h(36px);
+	}
+	&4 {
+		// @include h();
+	}
+	&5 {
+		// @include h();
+	}
+	&6 {
+		// @include h();
+	}
 }
 
 // layout rules
@@ -41,11 +59,11 @@ main {
 				border-bottom: none;
 				margin: 30px 0;
 				h1 {
-					font-size: 2.2rem;
+					// font-size: 2.2rem;
 				}
 			}
 			h2 {
-				font-size: 1.8rem;
+				// font-size: 3rem;
 			}
 		}
 		div {
@@ -63,3 +81,4 @@ main {
 @import url('./_containers.css');
 @import url('./_buttons.css');
 @import url('./_uhe.css');
+@import url('./_panels.css');

@@ -3,11 +3,7 @@
 .bc-text .bc-color-chip {
   text-align: center;
   padding: 3rem;
-}
-.bc-palette .bc-color-chip:nth-child(1n+2),
-.bc-backgrounds .bc-color-chip:nth-child(1n+2),
-.bc-text .bc-color-chip:nth-child(1n+2) {
-  margin-left: 20px;
+  margin: 1rem;
 }
 
 .dpu-bg-blue {

@@ -15,9 +15,10 @@
 	.bc-color-chip {
 		text-align: center;
 		padding: 3rem;
-		&:nth-child(1n + 2) {
-			margin-left: 20px;
-		}
+		margin: 1rem;
+		// &:nth-child(1n + 2) {
+		// 	margin-left: 20px;
+		// }
 	}
 }
 

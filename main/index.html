@@ -17,7 +17,7 @@
 			<section id="title">
 				<header id="main-header">
 					<div class="container">
-						<h1>DePaul University Design System</h1>
+						<h1 class="bc-h1">DePaul University Design System</h1>
 					</div>
 				</header>
 			</section>
@@ -25,12 +25,12 @@
 			<section id="colors">
 				<header>
 					<div class="container">
-						<h2>Colors</h2>
+						<h2 class="bc-h2">Colors</h2>
 					</div>
 				</header>
 				<div class="container">
-					<h3>Palette:</h3>
-					<div class="d-flex bc-palette">
+					<h3 class="bc-h3">Palette:</h3>
+					<div class="bc-palette">
 						<div class="bc-color-chip dpu-bg-blue text-white">#0057b7</div>
 						<div class="bc-color-chip dpu-bg-dark-blue text-white">#0057b7</div>
 						<div class="bc-color-chip dpu-bg-red text-white">#0057b7</div>
@@ -41,8 +41,8 @@
 					</div>
 				</div>
 				<div class="container">
-					<h3>Backgrounds:</h3>
-					<div class="d-flex bc-backgrounds">
+					<h3 class="bc-h3">Backgrounds:</h3>
+					<div class="bc-backgrounds">
 						<div class="bc-color-chip dpu-bg-blue text-white">Blue</div>
 						<div class="bc-color-chip dpu-bg-dark-blue text-white">
 							Dark Blue
@@ -53,8 +53,8 @@
 					</div>
 				</div>
 				<div class="container">
-					<h3>Text:</h3>
-					<div class="d-flex bc-text">
+					<h3 class="bc-h3">Text:</h3>
+					<div class="bc-text">
 						<div class="bc-color-chip border-blue text-blue">Blue Text</div>
 						<div class="bc-color-chip border-red text-red">Red Text</div>
 						<div class="bc-color-chip border-dark-blue text-dark-blue">
@@ -69,11 +69,11 @@
 			<section id="typography">
 				<header>
 					<div class="container">
-						<h2>Typography</h2>
+						<h2 class="bc-h2">Typography</h2>
 					</div>
 				</header>
 				<div class="container">
-					<h3>Font Stacks:</h3>
+					<h3 class="bc-h3">Font Stacks:</h3>
 					<div class="d-flex flex-wrap">
 						<span class="din"><strong>Din Pro Condensed Bold</strong></span>
 						<span class="din">Din Pro Condensed Regular</span>
@@ -83,7 +83,7 @@
 					</div>
 				</div>
 				<div class="container">
-					<h3>Headers:</h3>
+					<h3 class="bc-h3">Headers:</h3>
 					<section>
 						<h1 class="homepage">Homepage h1</h1>
 						<h1>Rollup h1</h1>
@@ -103,46 +103,22 @@
 			<section id="containers">
 				<header>
 					<div class="container">
-						<h2>Containers</h2>
+						<h2 class="bc-h2">Containers</h2>
 					</div>
 				</header>
 				<section>
-					<div class="container-xl border-blue">
-						<div class="row">Container 1920px</div>
-					</div>
-					<div class="container-lg border-blue">
-						<div class="row">Container 1440px</div>
-					</div>
-					<div class="container-md border-blue">
-						<div class="row">Container 1200px</div>
-					</div>
-					<div class="container-sm border-blue">
-						<div class="row">Container 1080px</div>
-					</div>
-					<div class="container-xs border-blue">
-						<div class="row">Container 900px</div>
-					</div>
+					<div class="container-xl border-blue">Container 1920px</div>
+					<div class="container-lg border-blue">Container 1440px</div>
+					<div class="container-md border-blue">Container 1200px</div>
+					<div class="container-sm border-blue">Container 1080px</div>
+					<div class="container-xs border-blue">Container 900px</div>
 				</section>
 			</section>
 
 			<section id="chrome">
 				<header>
 					<div class="container">
-						<h2>Chrome</h2>
-					</div>
-					<div class="container-fluid">
-						<div class="row">
-							<nav class="nav-bar">
-								<img src="logo" alt="DePaul" />
-								<div class="nav-list">
-									<div class="nav-item">item</div>
-									<div class="nav-item">item</div>
-									<div class="nav-item">item</div>
-									<div class="nav-item">item</div>
-									<div class="nav-item">item</div>
-								</div>
-							</nav>
-						</div>
+						<h2 class="bc-h2">Chrome</h2>
 					</div>
 				</header>
 			</section>
@@ -150,7 +126,7 @@
 			<section id="buttons">
 				<header>
 					<div class="container">
-						<h2>Buttons</h2>
+						<h2 class="bc-h2">Buttons</h2>
 					</div>
 				</header>
 				<div class="container">
@@ -182,10 +158,12 @@
 			<section id="unique-homepage-elements">
 				<header>
 					<div class="container">
-						<h2>Unique Homepage Elements</h2>
+						<h2 class="bc-h2">Unique Homepage Elements</h2>
 					</div>
 				</header>
-				<h3>Hero Area:</h3>
+				<div class="container">
+					<h3 class="bc-h3">Hero Area:</h3>
+				</div>
 				<div class="container-xl">
 					<!-- hero-container -->
 					<section id="hero-container">
@@ -202,7 +180,7 @@
 
 								<div class="cta col-md-4">
 									<div>
-										<p>
+										<p class="text-white">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 											sed do eiusmod
 										</p>
@@ -213,59 +191,85 @@
 						</div>
 					</section>
 					<!-- end hero-container -->
+				</div>
 
-					<div class="container">
-						<h3>Triangle One:</h3>
-						<section id="triangle-one">
-							<section class="triangles img-right row flex-row-reverse">
-								<div
-									class="col-md-6 col-sm-12 d-flex justify-content-center p-0"
-								>
-									<span class="image-content container-fluid"></span>
-								</div>
-								<div class="col-md-6 col-sm-12 p-0">
-									<div class="text d-flex flex-column align-items-center">
-										<h2>Heading</h2>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-										<a href="#" class="btn red-ghost">Learn more </a>
-									</div>
-								</div>
-							</section>
-							<section class="triangles img-left row">
-								<div
-									class="col-md-6 col-sm-12 d-flex justify-content-center p-0"
-								>
-									<span class="image-content container-fluid"></span>
-								</div>
-								<div class="col-md-6 col-sm-12 p-0">
-									<div class="text d-flex flex-column align-items-center">
-										<h2>Heading</h2>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											sed do eiusmod tempor incididunt ut labore et dolore magna
-											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-											ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										</p>
-										<a href="#" class="btn red-ghost">Learn more </a>
-									</div>
-								</div>
-							</section>
-						</section>
-					</div>
+				<div class="container">
+					<h3 class="bc-h3">Triangle One:</h3>
 				</div>
 			</section>
 
 			<section id="panel-objects">
 				<header>
 					<div class="container">
-						<h2>Panel Objects</h2>
+						<h2 class="bc-h2">Panel Objects</h2>
 					</div>
 				</header>
+				<div class="container">
+					<h3 class="bc-h3">Image and Video Headers</h3>
+				</div>
+				<div class="container">
+					<h3 class="bc-h3">Image Header</h3>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="img-header-bg">
+							<div class="img-header-content-block">
+								<div class="container-sm">
+									<h3 class="img-header-title text-white">header 1</h3>
+									<hr />
+									<p class="text-white">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Delectus numquam nisi quibusdam, eum illum cupiditate quos
+										cum nulla hic inventore mollitia exercitationem esse, culpa
+										veniam repudiandae reprehenderit similique repellat maxime?
+									</p>
+									<a href="#" class="btn white-ghost">btn white-ghost</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<h3 class="bc-h3">Large Triangle Panel Object - White</h3>
+				</div>
+				<div class="container-xl">
+					<section id="triangle-one">
+						<section class="triangles img-right row flex-row-reverse">
+							<div class="col-md-6 col-sm-12 d-flex justify-content-center p-0">
+								<span class="image-content container-fluid"></span>
+							</div>
+							<div class="col-md-6 col-sm-12 p-0">
+								<div class="text d-flex flex-column align-items-center">
+									<h2>Heading</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									</p>
+									<a href="#" class="btn red-ghost">Learn more </a>
+								</div>
+							</div>
+						</section>
+						<section class="triangles img-left row">
+							<div class="col-md-6 col-sm-12 d-flex justify-content-center p-0">
+								<span class="image-content container-fluid"></span>
+							</div>
+							<div class="col-md-6 col-sm-12 p-0">
+								<div class="text d-flex flex-column align-items-center">
+									<h2>Heading</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									</p>
+									<a href="#" class="btn red-ghost">Learn more </a>
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
 			</section>
 		</main>
 	</body>

@@ -20,6 +20,16 @@
 	border-radius: 0;
 	@include color(var(--pri-blue));
 
+	&.white {
+		@include color(var(--white));
+		&-ghost {
+			@include ghost(var(--white));
+			&:hover {
+				@include color(var(--white));
+				@include hover(var(--sec-blue));
+			}
+		}
+	}
 	&.red {
 		@include color(var(--red));
 		&-ghost {

@@ -4,6 +4,7 @@
 @import url("./_containers.css");
 @import url("./_buttons.css");
 @import url("./_uhe.css");
+@import url("./_panels.css");
 :root {
   --pri-blue: 0, 87, 183;
   --sec-blue: 14, 65, 116;
@@ -23,17 +24,24 @@ body {
   font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.bc-h1 {
   margin: 0;
   color: rgba(var(--pri-blue), 1);
   font-family: "Roboto";
+  font-size: 52px;
 }
-
+.bc-h2 {
+  margin: 0;
+  color: rgba(var(--pri-blue), 1);
+  font-family: "Roboto";
+  font-size: 48px;
+}
+.bc-h3 {
+  margin: 0;
+  color: rgba(var(--pri-blue), 1);
+  font-family: "Roboto";
+  font-size: 36px;
+}
 main {
   background: rgba(var(--white), 1);
   padding: 10px 0;
@@ -45,12 +53,6 @@ main section header {
 main section header#main-header {
   border-bottom: none;
   margin: 30px 0;
-}
-main section header#main-header h1 {
-  font-size: 2.2rem;
-}
-main section header h2 {
-  font-size: 1.8rem;
 }
 main section div h3 {
   padding: 1rem 0;
