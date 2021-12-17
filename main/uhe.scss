@@ -118,7 +118,7 @@
 }
 
 //triangle one
-.pentagon {
+.triangle-1 {
 	clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);
 	height: 600px;
 	position: relative;
@@ -216,12 +216,13 @@
 		padding-bottom: 3rem;
 		z-index: 100;
 		.content {
-			flex: 1 0 auto;
+			flex: 1 1 auto;
 			flex-flow: column;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+			text-align: center;
 		}
 	}
 }
