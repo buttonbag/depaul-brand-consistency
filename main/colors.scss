@@ -12,6 +12,8 @@
 .bc-palette,
 .bc-backgrounds,
 .bc-text {
+	display: flex;
+	flex-flow: row wrap;
 	.bc-color-chip {
 		text-align: center;
 		padding: 3rem;

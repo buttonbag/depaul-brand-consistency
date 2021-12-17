@@ -48,23 +48,21 @@ section p {
   font-size: 1.32rem;
 }
 
-span {
+#typography p.din {
   color: #565656;
-  font-size: 2rem;
-}
-span.din {
+  font-size: 3rem;
   font-family: "DIN Pro";
 }
-span.din strong {
+#typography p.din strong {
   font-family: "DIN Pro Bold";
 }
-span.din.black {
+#typography p.din.black {
   font-family: "DIN Pro Black";
 }
-span.roboto {
+#typography p.roboto {
   font-family: "Roboto";
 }
-span.roboto strong {
+#typography p.roboto strong {
   font-family: "Roboto Bold";
 }
 

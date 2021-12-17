@@ -52,22 +52,24 @@ section {
 	}
 }
 
-span {
-	color: #565656;
-	font-size: 2rem;
-	&.din {
-		font-family: 'DIN Pro';
-		strong {
-			font-family: 'DIN Pro Bold';
+#typography {
+	p {
+		&.din {
+			color: #565656;
+			font-size: 3rem;
+			font-family: 'DIN Pro';
+			strong {
+				font-family: 'DIN Pro Bold';
+			}
+			&.black {
+				font-family: 'DIN Pro Black';
+			}
 		}
-		&.black {
-			font-family: 'DIN Pro Black';
-		}
-	}
-	&.roboto {
-		font-family: 'Roboto';
-		strong {
-			font-family: 'Roboto Bold';
+		&.roboto {
+			font-family: 'Roboto';
+			strong {
+				font-family: 'Roboto Bold';
+			}
 		}
 	}
 }

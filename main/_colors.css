@@ -1,3 +1,9 @@
+.bc-palette,
+.bc-backgrounds,
+.bc-text {
+  display: flex;
+  flex-flow: row wrap;
+}
 .bc-palette .bc-color-chip,
 .bc-backgrounds .bc-color-chip,
 .bc-text .bc-color-chip {

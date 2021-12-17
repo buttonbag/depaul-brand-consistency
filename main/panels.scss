@@ -29,10 +29,9 @@
 }
 
 //internal page img header
-.img-header,
-.int-img-header {
+.img-header {
 	background: url('https://picsum.photos/900/600') center / cover;
-	max-width: 900px;
+	max-width: 100%;
 	height: 600px;
 	position: relative;
 
@@ -62,10 +61,6 @@
 			rgba(196, 196, 196, 0.75);
 		background-blend-mode: hard-light, normal;
 	}
-}
-//wide img header
-.img-header {
-	max-width: 100%;
 }
 
 // triangle page
