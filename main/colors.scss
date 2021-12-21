@@ -8,8 +8,23 @@
 @mixin border($size, $color) {
 	border: $size solid rgba($color);
 }
+@mixin color($color, $amount) {
+	$color: scale-color($color, $lightness: $amount);
+	background-color: $color;
+}
+@function hexToRGB($hex) {
+	@return red($hex), green($hex), blue($hex);
+}
+
+$pri-blue: 0 87 183;
+$sec-blue: 14 65 116;
+$red: 175 39 47;
+$white: 255 255 255;
+$gray: 86 86 86;
+$tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 
 .bc-palette,
+.bc-tints,
 .bc-backgrounds,
 .bc-text {
 	display: flex;
@@ -27,20 +42,68 @@
 .dpu-bg {
 	&-blue {
 		@include bg(var(--pri-blue));
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color(rgb($pri-blue), 100-$tint * 1%);
+			}
+		}
 	}
 	&-dark-blue {
 		@include bg(var(--sec-blue));
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color(rgb($sec-blue), 100-$tint * 1%);
+			}
+		}
 	}
 	&-red {
 		@include bg(var(--red));
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color(rgb($red), 100-$tint * 1%);
+			}
+		}
 	}
 	&-white {
 		@include bg(var(--white));
 	}
 	&-gray {
 		@include bg(var(--gray));
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color(rgb($pri-blue), 100-$tint * 1%);
+			}
+		}
 	}
 }
+
+.tint {
+	flex: 1 1 auto;
+	margin: 1px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	height: 150px;
+
+	.tint-label {
+		display: flex;
+		justify-content: flex-end;
+		color: rgb($gray);
+	}
+	.bc-blue-tint {
+		height: 5rem;
+		margin: 1px 0;
+	}
+	.bc-red-tint {
+		height: 3rem;
+		margin: 1px 0;
+	}
+	.bc-dark-blue-tint {
+		height: 4rem;
+		margin: 1px 0;
+	}
+}
+
 .text {
 	&-blue {
 		color: rgba(var(--pri-blue), 1);
