@@ -12,8 +12,9 @@
 	$color: scale-color($color, $lightness: $amount);
 	background-color: $color;
 }
-@function hexToRGB($hex) {
-	@return red($hex), green($hex), blue($hex);
+@mixin transparent($color, $amount) {
+	$color: rgba($color, $amount);
+	background: $color;
 }
 
 $pri-blue: 0 87 183;
@@ -45,6 +46,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color(rgb($pri-blue), 100-$tint * 1%);
+				&-transparent {
+					@include transparent(var(--pri-blue), $tint/100);
+				}
 			}
 		}
 	}
@@ -53,6 +57,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color(rgb($sec-blue), 100-$tint * 1%);
+				&-transparent {
+					@include transparent(var(--sec-blue), $tint/100);
+				}
 			}
 		}
 	}
@@ -61,6 +68,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color(rgb($red), 100-$tint * 1%);
+				&-transparent {
+					@include transparent(var(--red), $tint/100);
+				}
 			}
 		}
 	}
@@ -71,7 +81,10 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@include bg(var(--gray));
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color(rgb($pri-blue), 100-$tint * 1%);
+				@include color(rgb($gray), 100-$tint * 1%);
+				&-transparent {
+					@include transparent(var(--gray), $tint/100);
+				}
 			}
 		}
 	}
@@ -89,6 +102,7 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		display: flex;
 		justify-content: flex-end;
 		color: rgb($gray);
+		font-size: 0.75rem;
 	}
 	.bc-blue-tint {
 		height: 5rem;
