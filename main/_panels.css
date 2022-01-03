@@ -1,31 +1,304 @@
 .bc-palette,
+.bc-tints,
 .bc-backgrounds,
 .bc-text {
   display: flex;
   flex-flow: row wrap;
 }
 .bc-palette .bc-color-chip,
+.bc-tints .bc-color-chip,
 .bc-backgrounds .bc-color-chip,
 .bc-text .bc-color-chip {
   text-align: center;
-  padding: 3rem;
   margin: 1rem;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dpu-bg-blue {
   background: rgba(var(--pri-blue), 1);
 }
+.dpu-bg-blue-100 {
+  background-color: #0057b7;
+}
+.dpu-bg-blue-100-transparent {
+  background: rgba(var(--pri-blue), 1);
+}
+.dpu-bg-blue-90 {
+  background-color: #0067d8;
+}
+.dpu-bg-blue-90-transparent {
+  background: rgba(var(--pri-blue), 0.9);
+}
+.dpu-bg-blue-80 {
+  background-color: #0076f8;
+}
+.dpu-bg-blue-80-transparent {
+  background: rgba(var(--pri-blue), 0.8);
+}
+.dpu-bg-blue-70 {
+  background-color: #1a87ff;
+}
+.dpu-bg-blue-70-transparent {
+  background: rgba(var(--pri-blue), 0.7);
+}
+.dpu-bg-blue-60 {
+  background-color: #3b98ff;
+}
+.dpu-bg-blue-60-transparent {
+  background: rgba(var(--pri-blue), 0.6);
+}
+.dpu-bg-blue-50 {
+  background-color: #5ca9ff;
+}
+.dpu-bg-blue-50-transparent {
+  background: rgba(var(--pri-blue), 0.5);
+}
+.dpu-bg-blue-40 {
+  background-color: #7cbaff;
+}
+.dpu-bg-blue-40-transparent {
+  background: rgba(var(--pri-blue), 0.4);
+}
+.dpu-bg-blue-30 {
+  background-color: #9dccff;
+}
+.dpu-bg-blue-30-transparent {
+  background: rgba(var(--pri-blue), 0.3);
+}
+.dpu-bg-blue-20 {
+  background-color: #beddff;
+}
+.dpu-bg-blue-20-transparent {
+  background: rgba(var(--pri-blue), 0.2);
+}
+.dpu-bg-blue-10 {
+  background-color: #deeeff;
+}
+.dpu-bg-blue-10-transparent {
+  background: rgba(var(--pri-blue), 0.1);
+}
 .dpu-bg-dark-blue {
   background: rgba(var(--sec-blue), 1);
 }
+.dpu-bg-dark-blue-100 {
+  background-color: #0e4174;
+}
+.dpu-bg-dark-blue-100-transparent {
+  background: rgba(var(--sec-blue), 1);
+}
+.dpu-bg-dark-blue-90 {
+  background-color: #125496;
+}
+.dpu-bg-dark-blue-90-transparent {
+  background: rgba(var(--sec-blue), 0.9);
+}
+.dpu-bg-dark-blue-80 {
+  background-color: #1667b8;
+}
+.dpu-bg-dark-blue-80-transparent {
+  background: rgba(var(--sec-blue), 0.8);
+}
+.dpu-bg-dark-blue-70 {
+  background-color: #1a7ada;
+}
+.dpu-bg-dark-blue-70-transparent {
+  background: rgba(var(--sec-blue), 0.7);
+}
+.dpu-bg-dark-blue-60 {
+  background-color: #348de6;
+}
+.dpu-bg-dark-blue-60-transparent {
+  background: rgba(var(--sec-blue), 0.6);
+}
+.dpu-bg-dark-blue-50 {
+  background-color: #55a0eb;
+}
+.dpu-bg-dark-blue-50-transparent {
+  background: rgba(var(--sec-blue), 0.5);
+}
+.dpu-bg-dark-blue-40 {
+  background-color: #77b3ef;
+}
+.dpu-bg-dark-blue-40-transparent {
+  background: rgba(var(--sec-blue), 0.4);
+}
+.dpu-bg-dark-blue-30 {
+  background-color: #99c6f3;
+}
+.dpu-bg-dark-blue-30-transparent {
+  background: rgba(var(--sec-blue), 0.3);
+}
+.dpu-bg-dark-blue-20 {
+  background-color: #bbd9f7;
+}
+.dpu-bg-dark-blue-20-transparent {
+  background: rgba(var(--sec-blue), 0.2);
+}
+.dpu-bg-dark-blue-10 {
+  background-color: #ddecfb;
+}
+.dpu-bg-dark-blue-10-transparent {
+  background: rgba(var(--sec-blue), 0.1);
+}
 .dpu-bg-red {
   background: rgba(var(--red), 1);
+}
+.dpu-bg-red-100 {
+  background-color: #af272f;
+}
+.dpu-bg-red-100-transparent {
+  background: rgba(var(--red), 1);
+}
+.dpu-bg-red-90 {
+  background-color: #c72c36;
+}
+.dpu-bg-red-90-transparent {
+  background: rgba(var(--red), 0.9);
+}
+.dpu-bg-red-80 {
+  background-color: #d43d46;
+}
+.dpu-bg-red-80-transparent {
+  background: rgba(var(--red), 0.8);
+}
+.dpu-bg-red-70 {
+  background-color: #d9565d;
+}
+.dpu-bg-red-70-transparent {
+  background: rgba(var(--red), 0.7);
+}
+.dpu-bg-red-60 {
+  background-color: #df6e74;
+}
+.dpu-bg-red-60-transparent {
+  background: rgba(var(--red), 0.6);
+}
+.dpu-bg-red-50 {
+  background-color: #e4868c;
+}
+.dpu-bg-red-50-transparent {
+  background: rgba(var(--red), 0.5);
+}
+.dpu-bg-red-40 {
+  background-color: #e99ea3;
+}
+.dpu-bg-red-40-transparent {
+  background: rgba(var(--red), 0.4);
+}
+.dpu-bg-red-30 {
+  background-color: #efb6ba;
+}
+.dpu-bg-red-30-transparent {
+  background: rgba(var(--red), 0.3);
+}
+.dpu-bg-red-20 {
+  background-color: #f4cfd1;
+}
+.dpu-bg-red-20-transparent {
+  background: rgba(var(--red), 0.2);
+}
+.dpu-bg-red-10 {
+  background-color: #fae7e8;
+}
+.dpu-bg-red-10-transparent {
+  background: rgba(var(--red), 0.1);
 }
 .dpu-bg-white {
   background: rgba(var(--white), 1);
 }
 .dpu-bg-gray {
   background: rgba(var(--gray), 1);
+}
+.dpu-bg-gray-100 {
+  background-color: #565656;
+}
+.dpu-bg-gray-100-transparent {
+  background: rgba(var(--gray), 1);
+}
+.dpu-bg-gray-90 {
+  background-color: #676767;
+}
+.dpu-bg-gray-90-transparent {
+  background: rgba(var(--gray), 0.9);
+}
+.dpu-bg-gray-80 {
+  background-color: #787878;
+}
+.dpu-bg-gray-80-transparent {
+  background: rgba(var(--gray), 0.8);
+}
+.dpu-bg-gray-70 {
+  background-color: #898989;
+}
+.dpu-bg-gray-70-transparent {
+  background: rgba(var(--gray), 0.7);
+}
+.dpu-bg-gray-60 {
+  background-color: #9a9a9a;
+}
+.dpu-bg-gray-60-transparent {
+  background: rgba(var(--gray), 0.6);
+}
+.dpu-bg-gray-50 {
+  background-color: #ababab;
+}
+.dpu-bg-gray-50-transparent {
+  background: rgba(var(--gray), 0.5);
+}
+.dpu-bg-gray-40 {
+  background-color: #bbbbbb;
+}
+.dpu-bg-gray-40-transparent {
+  background: rgba(var(--gray), 0.4);
+}
+.dpu-bg-gray-30 {
+  background-color: #cccccc;
+}
+.dpu-bg-gray-30-transparent {
+  background: rgba(var(--gray), 0.3);
+}
+.dpu-bg-gray-20 {
+  background-color: #dddddd;
+}
+.dpu-bg-gray-20-transparent {
+  background: rgba(var(--gray), 0.2);
+}
+.dpu-bg-gray-10 {
+  background-color: #eeeeee;
+}
+.dpu-bg-gray-10-transparent {
+  background: rgba(var(--gray), 0.1);
+}
+
+.tint {
+  flex: 1 1 auto;
+  margin: 1px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  height: 150px;
+}
+.tint .tint-label {
+  display: flex;
+  justify-content: flex-end;
+  color: #565656;
+  font-size: 0.75rem;
+}
+.tint .bc-blue-tint {
+  height: 5rem;
+  margin: 1px 0;
+}
+.tint .bc-red-tint {
+  height: 3rem;
+  margin: 1px 0;
+}
+.tint .bc-dark-blue-tint {
+  height: 4rem;
+  margin: 1px 0;
 }
 
 .text-blue {
@@ -62,7 +335,6 @@
   padding: 6rem 0;
 }
 .img-header-content-block {
-  background: rgba(var(--pri-blue), 0.75);
   display: flex;
   flex-flow: column;
   align-items: center;

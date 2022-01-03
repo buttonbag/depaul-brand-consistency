@@ -32,11 +32,12 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 	flex-flow: row wrap;
 	.bc-color-chip {
 		text-align: center;
-		padding: 3rem;
 		margin: 1rem;
-		// &:nth-child(1n + 2) {
-		// 	margin-left: 20px;
-		// }
+		width: 150px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -45,9 +46,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@include bg(var(--pri-blue));
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color(rgb($pri-blue), 100-$tint * 1%);
+				@include color(rgb($pri-blue), 100%-$tint);
 				&-transparent {
-					@include transparent(var(--pri-blue), $tint/100);
+					@include transparent(var(--pri-blue), calc($tint/100));
 				}
 			}
 		}
@@ -56,9 +57,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@include bg(var(--sec-blue));
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color(rgb($sec-blue), 100-$tint * 1%);
+				@include color(rgb($sec-blue), 100%-$tint);
 				&-transparent {
-					@include transparent(var(--sec-blue), $tint/100);
+					@include transparent(var(--sec-blue), calc($tint/100));
 				}
 			}
 		}
@@ -67,9 +68,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@include bg(var(--red));
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color(rgb($red), 100-$tint * 1%);
+				@include color(rgb($red), 100%-$tint);
 				&-transparent {
-					@include transparent(var(--red), $tint/100);
+					@include transparent(var(--red), calc($tint/100));
 				}
 			}
 		}
@@ -81,9 +82,9 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 		@include bg(var(--gray));
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color(rgb($gray), 100-$tint * 1%);
+				@include color(rgb($gray), 100%-$tint);
 				&-transparent {
-					@include transparent(var(--gray), $tint/100);
+					@include transparent(var(--gray), calc($tint/100));
 				}
 			}
 		}

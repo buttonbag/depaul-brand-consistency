@@ -54,9 +54,12 @@ section {
 
 #typography {
 	p {
-		&.din {
+		&.din,
+		&.roboto {
+			font-size: 2.4rem;
 			color: #565656;
-			font-size: 3rem;
+		}
+		&.din {
 			font-family: 'DIN Pro';
 			strong {
 				font-family: 'DIN Pro Bold';

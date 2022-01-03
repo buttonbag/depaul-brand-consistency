@@ -10,8 +10,12 @@
 .bc-backgrounds .bc-color-chip,
 .bc-text .bc-color-chip {
   text-align: center;
-  padding: 3rem;
   margin: 1rem;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dpu-bg-blue {
