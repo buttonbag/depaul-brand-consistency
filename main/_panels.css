@@ -384,78 +384,24 @@
   background-blend-mode: hard-light, normal;
 }
 
-.triangles {
-  font-family: "Roboto";
+.clip, .clip-right-bottom, .clip-right-top, .clip-left-bottom, .clip-left-top {
+  box-sizing: border-box;
 }
-.triangles .text {
-  text-align: center;
+.clip-left-top {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
-.triangles .text h2 {
-  font-family: "DIN Pro";
-  font-size: 2.63rem;
-  color: rgba(var(--pri-blue), 1);
+.clip-left-bottom {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 }
-@media screen and (max-width: 414px) {
-  .triangles .text h2 {
-    font-size: 2rem;
-  }
+.clip-right-top {
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }
-.triangles .text p {
-  font-size: 1.3rem;
-  color: rgba(var(--gray), 1);
-}
-@media screen and (max-width: 414px) {
-  .triangles .text p {
-    font-size: 1rem;
-  }
+.clip-right-bottom {
+  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-.img-right .text {
-  padding: 5rem 0 5rem 3rem;
-}
-@media screen and (max-width: 820px) {
-  .img-right .text {
-    padding: 3rem;
-  }
-}
-.img-right .image-content {
-  background: url("https://via.placeholder.com/800x1200") 50% 50%/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
-}
-@media screen and (max-width: 820px) {
-  .img-right .image-content {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-    padding: 10rem;
-  }
-}
-@media screen and (max-width: 414px) {
-  .img-right .image-content {
-    padding: 5rem;
-  }
-}
-
-.img-left .text {
-  padding: 5rem 3rem 5rem 0;
-}
-@media screen and (max-width: 820px) {
-  .img-left .text {
-    padding: 3rem;
-  }
-}
-.img-left .image-content {
-  background: url("https://via.placeholder.com/800x1200") 50% 50%/cover no-repeat;
-  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
-}
-@media screen and (max-width: 820px) {
-  .img-left .image-content {
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-    padding: 10rem;
-  }
-}
-@media screen and (max-width: 414px) {
-  .img-left .image-content {
-    padding: 5rem;
-  }
+.img-container {
+  background: url(https://via.placeholder.com/1200) center/cover;
 }
 
 .card {

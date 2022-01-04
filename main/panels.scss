@@ -63,68 +63,45 @@
 }
 
 // triangle page
-.triangles {
-	font-family: 'Roboto';
-	.text {
-		text-align: center;
-		h2 {
-			font-family: 'DIN Pro';
-			font-size: 2.63rem;
-			color: rgba(var(--pri-blue), 1);
-			@include screen-max($screen-sm) {
-				font-size: 2rem;
-			}
+@mixin left-top {
+	clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+@mixin left-bottom {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+@mixin right-top {
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+@mixin right-bottom {
+	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.clip {
+	box-sizing: border-box;
+	&-left {
+		&-top {
+			@extend .clip;
+			@include left-top;
 		}
-		p {
-			font-size: 1.3rem;
-			color: rgba(var(--gray), 1);
-			@include screen-max($screen-sm) {
-				font-size: 1rem;
-			}
+		&-bottom {
+			@extend .clip;
+			@include left-bottom;
+		}
+	}
+	&-right {
+		&-top {
+			@extend .clip;
+			@include right-top;
+		}
+		&-bottom {
+			@extend .clip;
+			@include right-bottom;
 		}
 	}
 }
-.img-right {
-	.text {
-		padding: 5rem 0 5rem 3rem;
-		@include screen-max($screen-md) {
-			padding: 3rem;
-		}
-	}
-	.image-content {
-		background: url('https://via.placeholder.com/800x1200') 50% 50% / cover
-			no-repeat;
-		clip-path: polygon(0 0, 100% 0%, 100% 100%, 20% 100%);
 
-		@include screen-max($screen-md) {
-			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-			padding: 10rem;
-		}
-		@include screen-max($screen-sm) {
-			padding: 5rem;
-		}
-	}
-}
-.img-left {
-	.text {
-		padding: 5rem 3rem 5rem 0;
-		@include screen-max($screen-md) {
-			padding: 3rem;
-		}
-	}
-	.image-content {
-		background: url('https://via.placeholder.com/800x1200') 50% 50% / cover
-			no-repeat;
-		clip-path: polygon(0 0, 80% 0%, 100% 100%, 0 100%);
-
-		@include screen-max($screen-md) {
-			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-			padding: 10rem;
-		}
-		@include screen-max($screen-sm) {
-			padding: 5rem;
-		}
-	}
+.img-container {
+	background: url(https://via.placeholder.com/1200) center / cover;
 }
 
 //cards
