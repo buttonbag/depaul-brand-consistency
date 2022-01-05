@@ -1,0 +1,6 @@
+@mixin h($size) {
+	margin: 0;
+	color: rgba(var(--pri-blue), 1);
+	font-family: 'Roboto';
+	font-size: $size;
+}

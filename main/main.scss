@@ -8,12 +8,7 @@
 }
 
 // base rules
-@mixin h($size) {
-	margin: 0;
-	color: rgba(var(--pri-blue), 1);
-	font-family: 'Roboto';
-	font-size: $size;
-}
+@import 'mixins';
 
 * {
 	box-sizing: border-box;
@@ -47,6 +42,10 @@ body {
 	}
 }
 
+.bc-height {
+	height: 100px;
+}
+
 // layout rules
 main {
 	background: rgba(var(--white), 1);
@@ -75,11 +74,11 @@ main {
 }
 
 // module rules
-@import url('./_colors.css');
-@import url('./_fonts.css');
-@import url('./_typography.css');
-@import url('./_containers.css');
-@import url('./_buttons.css');
-@import url('./_uhe.css');
-@import url('./_panels.css');
-@import url('./_webparts.css');
+@import '_colors';
+@import '_fonts';
+@import '_typography';
+@import '_containers';
+@import '_buttons';
+@import '_uhe';
+@import '_panels';
+@import '_webparts';
