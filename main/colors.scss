@@ -1,29 +1,4 @@
 // colors
-@mixin text($color) {
-	color: rgba($color, 1);
-}
-@mixin bg($color) {
-	background: rgba($color, 1);
-}
-@mixin border($size, $color) {
-	border: $size solid rgba($color);
-}
-@mixin color($color, $amount) {
-	$color: scale-color($color, $lightness: $amount);
-	background-color: $color;
-}
-@mixin transparent($color, $amount) {
-	$color: rgba($color, $amount);
-	background: $color;
-}
-
-$pri-blue: 0 87 183;
-$sec-blue: 14 65 116;
-$red: 175 39 47;
-$white: 255 255 255;
-$gray: 86 86 86;
-$tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
-
 .bc-palette,
 .bc-tints,
 .bc-backgrounds,

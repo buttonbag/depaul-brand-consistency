@@ -1,6 +1,76 @@
+// brand consistency h elements
 @mixin h($size) {
 	margin: 0;
 	color: rgba(var(--pri-blue), 1);
 	font-family: 'Roboto';
 	font-size: $size;
+}
+
+// screen sizes
+$screen-lg: 1200px;
+$screen-md: 820px;
+$screen-sm: 414px;
+
+@mixin screen-max($max) {
+	@media screen and (max-width: $max) {
+		@content;
+	}
+}
+
+// colors
+$pri-blue: 0 87 183;
+$sec-blue: 14 65 116;
+$red: 175 39 47;
+$white: 255 255 255;
+$gray: 86 86 86;
+$tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
+
+@mixin text($color) {
+	color: rgba($color, 1);
+}
+@mixin bg($color) {
+	background: rgba($color, 1);
+}
+@mixin border($size, $color) {
+	border: $size solid rgba($color);
+}
+@mixin color($color, $amount) {
+	$color: scale-color($color, $lightness: $amount);
+	background-color: $color;
+}
+@mixin transparent($color, $amount) {
+	$color: rgba($color, $amount);
+	background: $color;
+}
+
+// triangle page
+@mixin left-top {
+	clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+@mixin left-bottom {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+@mixin right-top {
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+@mixin right-bottom {
+	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+// buttons
+@mixin btn-color($color) {
+	background: rgba($color, 1);
+	color: rgba(var(--white), 1);
+}
+@mixin ghost($color) {
+	border: 3px solid rgba($color, 1);
+	background: transparent;
+	color: rgba($color, 1);
+	&.-shadow {
+		box-shadow: 5px 5px 0 -1px rgba($color, 1) !important;
+	}
+}
+@mixin hover($color) {
+	background: rgba($color, 1);
+	color: rgba(var(--white), 1);
 }
