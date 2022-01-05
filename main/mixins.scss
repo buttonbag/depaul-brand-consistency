@@ -76,3 +76,12 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 	background: rgba($color, 1);
 	color: rgba(var(--white), 1);
 }
+
+// uhe
+
+$gradient: linear-gradient(
+		180deg,
+		rgba(26, 76, 141, 0) 60.42%,
+		rgba(var(--sec-blue), 0.75) 88.54%
+	),
+	rgba(var(--pri-blue), 0.75);
