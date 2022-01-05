@@ -66,9 +66,11 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 	border: 3px solid rgba($color, 1);
 	background: transparent;
 	color: rgba($color, 1);
-	&.-shadow {
-		box-shadow: 5px 5px 0 -1px rgba($color, 1) !important;
-	}
+}
+@mixin shadow($color) {
+	@include ghost($color);
+	box-shadow: 5px 5px 0 -1px rgba($color, 1) !important;
+	padding-bottom: 5px;
 }
 @mixin hover($color) {
 	background: rgba($color, 1);
