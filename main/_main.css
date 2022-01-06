@@ -914,5 +914,18 @@ section p {
 .footer p {
   color: rgba(var(--white));
 }
+.footer .fab {
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.footer .copyright {
+  font-family: "Roboto";
+}
+.footer .copyright a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=_main.css.map */

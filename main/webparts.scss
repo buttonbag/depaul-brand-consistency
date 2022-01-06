@@ -43,4 +43,17 @@
 	p {
 		color: rgba(var(--white));
 	}
+	.fab {
+		width: 48px;
+		height: 48px;
+		text-decoration: none;
+		color: white;
+		font-size: 2rem;
+	}
+	.copyright {
+		font-family: 'Roboto';
+		a {
+			text-decoration: none;
+		}
+	}
 }
