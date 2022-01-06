@@ -1,26 +1,24 @@
 // video and image headers
-.img-header {
-	&-bg {
-		background: url('https://via.placeholder.com/1920x400') center center/cover;
-		padding: 6rem 0;
+.img-header-bg {
+	background-image: url('https://picsum.photos/1920/400') center center/cover;
+	background-color: rgba(var(--gray), 0.5);
+	background-blend-mode: overlay;
+	padding: 6rem 0;
+	text-align: center;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-transform: uppercase;
+		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+		border-bottom: 2px solid white;
+		box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
 	}
-	&-content-block {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		text-align: center;
-		padding: 10px 20px;
-		line-height: 1.5;
-		.img-header-title {
-			text-transform: uppercase;
-			border-bottom: 2px solid white;
-			box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
-			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-		}
-		p {
-			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-			padding: 1rem;
-		}
+	p {
+		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+		padding: 1rem;
 	}
 }
 

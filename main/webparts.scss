@@ -1,4 +1,36 @@
 // web parts
+// faq
+.accordion-item {
+	.accordion-header {
+		.accordion-button {
+			font-family: 'DIN pro bold';
+			padding: 1rem 0;
+			font-size: 1.5rem;
+			color: rgba(var(--sec-blue));
+			background: white;
+			justify-content: space-between;
+			.bi.bi-plus {
+				transition: 0.25s all;
+				font-size: 2rem;
+			}
+			&.collapsed {
+				font-family: 'DIN pro';
+			}
+			&:not(.collapsed) {
+				.bi.bi-plus {
+					transform: rotate(45deg);
+				}
+			}
+			&::after {
+				display: none;
+			}
+		}
+	}
+	.accordion-body {
+		padding: 1rem 0;
+		font-family: 'Roboto';
+	}
+}
 
 //footer
 .footer {

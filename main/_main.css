@@ -531,7 +531,7 @@ section p {
   background: transparent;
   color: rgba(var(--white), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--white), 1) !important;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 .btn.white-ghost-shadow:hover {
   background: rgba(var(--white), 1);
@@ -557,7 +557,7 @@ section p {
   background: transparent;
   color: rgba(var(--red), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--red), 1) !important;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 .btn.red-ghost-shadow:hover {
   background: rgba(var(--red), 1);
@@ -581,7 +581,7 @@ section p {
   background: transparent;
   color: rgba(var(--pri-blue), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--pri-blue), 1) !important;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 .btn.blue-ghost-shadow:hover {
   background: rgba(var(--pri-blue), 1);
@@ -605,7 +605,7 @@ section p {
   background: transparent;
   color: rgba(var(--sec-blue), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--sec-blue), 1) !important;
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 .btn.blue-dark-ghost-shadow:hover {
   background: rgba(var(--sec-blue), 1);
@@ -775,24 +775,24 @@ section p {
 }
 
 .img-header-bg {
-  background: url("https://via.placeholder.com/1920x400") center center/cover;
+  background-image: url("https://picsum.photos/1920/400") center center/cover;
+  background-color: rgba(var(--gray), 0.5);
+  background-blend-mode: overlay;
   padding: 6rem 0;
-}
-.img-header-content-block {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   text-align: center;
-  padding: 10px 20px;
-  line-height: 1.5;
 }
-.img-header-content-block .img-header-title {
+.img-header-bg h1,
+.img-header-bg h2,
+.img-header-bg h3,
+.img-header-bg h4,
+.img-header-bg h5,
+.img-header-bg h6 {
   text-transform: uppercase;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid white;
   box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
-.img-header-content-block p {
+.img-header-bg p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
@@ -875,6 +875,32 @@ section p {
 .card .card-footer:hover {
   background: rgba(var(--pri-blue), 0.75);
   color: rgba(var(--white));
+}
+
+.accordion-item .accordion-header .accordion-button {
+  font-family: "DIN pro bold";
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: rgba(var(--sec-blue));
+  background: white;
+  justify-content: space-between;
+}
+.accordion-item .accordion-header .accordion-button .bi.bi-plus {
+  transition: 0.25s all;
+  font-size: 2rem;
+}
+.accordion-item .accordion-header .accordion-button.collapsed {
+  font-family: "DIN pro";
+}
+.accordion-item .accordion-header .accordion-button:not(.collapsed) .bi.bi-plus {
+  transform: rotate(45deg);
+}
+.accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.accordion-item .accordion-body {
+  padding: 1rem 0;
+  font-family: "Roboto";
 }
 
 .footer {
