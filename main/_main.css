@@ -492,29 +492,49 @@ p.roboto strong {
   text-transform: capitalize !important;
 }
 
-.container-xl, .container-lg, .container-md, .container-sm, .container-xs {
+.container-1920, .container-1440, .container-1200, .container-1080, .container-900,
+.wrap-1920,
+.wrap-1440,
+.wrap-1200,
+.wrap-1080,
+.wrap-900 {
   margin: 1rem auto;
   font-family: "Roboto";
   font-size: 1.2rem;
   color: rgba(var(--gray), 1);
 }
-.container-xl {
+.container-1920,
+.wrap-1920 {
   max-width: 1920px;
 }
-.container-lg {
+.container-1440,
+.wrap-1440 {
   max-width: 1440px;
 }
-.container-md {
+.container-1200,
+.wrap-1200 {
   max-width: 1200px;
 }
-.container-sm {
+.container-1080,
+.wrap-1080 {
   max-width: 1080px;
 }
-.container-xs {
+.container-900,
+.wrap-900 {
   max-width: 900px;
 }
 
-#containers .container-xl, #containers .container-lg, #containers .container-md, #containers .container-sm, #containers .container-xs {
+#containers .container-xl, #containers .container-1920, #containers .container-lg, #containers .container-1440, #containers .container-md, #containers .container-1200, #containers .container-sm, #containers .container-1080, #containers .container-xs, #containers .container-900,
+#containers .wrap-xl,
+#containers .wrap-1920,
+#containers .wrap-lg,
+#containers .wrap-1440,
+#containers .wrap-md,
+#containers .wrap-1200,
+#containers .wrap-sm,
+#containers .wrap-1080,
+#containers .wrap-xs,
+#containers .wrap-900 {
   height: 100px;
 }
 
@@ -906,28 +926,44 @@ p.roboto strong {
   color: rgba(var(--white));
 }
 
-.accordion-item .accordion-header .accordion-button {
+.accordion-item,
+.accordion-item:last-child {
+  border-bottom: 1px solid rgba(var(--pri-blue)) !important;
+}
+.accordion-item .accordion-header .accordion-button,
+.accordion-item:last-child .accordion-header .accordion-button {
   font-family: "DIN pro bold";
-  padding: 1rem 0;
+  padding: 0;
   font-size: 1.5rem;
   color: rgba(var(--sec-blue));
   background: white;
   justify-content: space-between;
 }
-.accordion-item .accordion-header .accordion-button .bi.bi-plus {
+.accordion-item .accordion-header .accordion-button .bi.bi-plus,
+.accordion-item:last-child .accordion-header .accordion-button .bi.bi-plus {
   transition: 0.25s all;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: rgba(var(--pri-blue));
 }
-.accordion-item .accordion-header .accordion-button.collapsed {
-  font-family: "DIN pro";
+.accordion-item .accordion-header .accordion-button.collapsed,
+.accordion-item:last-child .accordion-header .accordion-button.collapsed {
+  font-weight: normal;
 }
-.accordion-item .accordion-header .accordion-button:not(.collapsed) .bi.bi-plus {
+.accordion-item .accordion-header .accordion-button:not(.collapsed),
+.accordion-item:last-child .accordion-header .accordion-button:not(.collapsed) {
+  font-weight: bold;
+  box-shadow: inset 0 -1px 0 rgba(var(--pri-blue));
+}
+.accordion-item .accordion-header .accordion-button:not(.collapsed) .bi.bi-plus,
+.accordion-item:last-child .accordion-header .accordion-button:not(.collapsed) .bi.bi-plus {
   transform: rotate(45deg);
 }
-.accordion-item .accordion-header .accordion-button::after {
+.accordion-item .accordion-header .accordion-button::after,
+.accordion-item:last-child .accordion-header .accordion-button::after {
   display: none;
 }
-.accordion-item .accordion-body {
+.accordion-item .accordion-body,
+.accordion-item:last-child .accordion-body {
   padding: 1rem 0;
   font-family: "Roboto";
 }
@@ -942,6 +978,7 @@ p.roboto strong {
 .footer a,
 .footer p {
   color: rgba(var(--white));
+  font-size: 1.25rem;
   line-height: 1.8;
 }
 .footer .fab {
@@ -953,8 +990,10 @@ p.roboto strong {
 }
 .footer .copyright {
   font-family: "Roboto";
+  font-size: 1rem;
 }
 .footer .copyright a {
+  font-size: 1rem;
   text-decoration: none;
 }
 

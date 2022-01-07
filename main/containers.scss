@@ -1,39 +1,50 @@
-.container {
-	&-xl,
-	&-lg,
-	&-md,
-	&-sm,
-	&-xs {
+.container,
+.wrap {
+	&-1920,
+	&-1440,
+	&-1200,
+	&-1080,
+	&-900 {
 		margin: 1rem auto;
 		font-family: 'Roboto';
 		font-size: 1.2rem;
 		color: rgba(var(--gray), 1);
 	}
 
-	&-xl {
+	&-1920 {
 		max-width: 1920px;
 	}
-	&-lg {
+
+	&-1440 {
 		max-width: 1440px;
 	}
-	&-md {
+
+	&-1200 {
 		max-width: 1200px;
 	}
-	&-sm {
+
+	&-1080 {
 		max-width: 1080px;
 	}
-	&-xs {
+
+	&-900 {
 		max-width: 900px;
 	}
 }
 
 #containers {
-	.container {
+	.container,
+	.wrap {
 		&-xl,
+		&-1920,
 		&-lg,
+		&-1440,
 		&-md,
+		&-1200,
 		&-sm,
-		&-xs {
+		&-1080,
+		&-xs,
+		&-900 {
 			height: 100px;
 		}
 	}
