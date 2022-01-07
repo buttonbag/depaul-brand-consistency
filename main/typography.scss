@@ -1,55 +1,64 @@
-section {
-	.homepage {
-		color: rgba(var(--sec-blue), 1);
-		text-transform: uppercase;
-		font-size: 4rem;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		padding: 0.5rem 0;
-		font-family: 'DIN Pro Bold';
-		color: rgba(var(--pri-blue), 1);
-		line-height: 1.25;
-	}
+.homepage {
+	color: rgba(var(--sec-blue), 1);
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0.5rem 0;
+	font-family: 'DIN Pro Bold';
+	color: rgba(var(--pri-blue), 1);
+	line-height: 1.25;
+}
 
-	h4,
-	h5,
-	h6 {
-		font-family: 'Roboto Bold';
-		color: rgba(var(--gray), 1);
-	}
-	p {
-		font-family: 'Roboto';
-		color: rgba(var(--gray), 1);
-	}
-	a {
-		color: rgba(var(--pri-blue), 1);
-	}
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Bold';
+	color: rgba(var(--gray), 1);
+}
+p {
+	font-family: 'Roboto';
+	color: rgba(var(--gray), 1);
+}
+a {
+	color: rgba(var(--pri-blue), 1);
+}
 
-	h1 {
-		font-size: 3.1rem;
-	}
-	h2 {
-		font-size: 2.63rem;
-	}
-	h3 {
-		font-size: 2.25rem;
-	}
-	h4 {
-		font-size: 1.38rem;
-	}
-	h5 {
-		font-size: 1.2rem;
-	}
-	h6 {
-		font-size: 1rem;
-	}
-	p {
-		font-size: 1.32rem;
+h1 {
+	font-size: 3.1rem;
+}
+h2 {
+	font-size: 2.63rem;
+}
+h3 {
+	font-size: 2.25rem;
+}
+h4 {
+	font-size: 1.38rem;
+}
+h5 {
+	font-size: 1.2rem;
+}
+h6 {
+	font-size: 1rem;
+}
+p {
+	font-size: 1.32rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&.rollup {
+		border-bottom: 3px solid rgba(var(--sec-blue), 1);
 	}
 }
 
@@ -86,4 +95,8 @@ p {
 
 .cam-case {
 	text-transform: capitalize !important;
+}
+
+a {
+	font-family: 'Roboto';
 }

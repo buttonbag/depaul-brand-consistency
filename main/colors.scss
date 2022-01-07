@@ -26,6 +26,14 @@
 				@include color(rgb($pri-blue), 100%-$tint);
 				&-transparent {
 					@include transparent(var(--pri-blue), calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken(rgb($pri-blue), 10%);
+					}
 				}
 			}
 		}
@@ -37,6 +45,14 @@
 				@include color(rgb($sec-blue), 100%-$tint);
 				&-transparent {
 					@include transparent(var(--sec-blue), calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken(rgb($sec-blue), 10%);
+					}
 				}
 			}
 		}
@@ -48,6 +64,14 @@
 				@include color(rgb($red), 100%-$tint);
 				&-transparent {
 					@include transparent(var(--red), calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken(rgb($red), 10%);
+					}
 				}
 			}
 		}
@@ -62,6 +86,14 @@
 				@include color(rgb($gray), 100%-$tint);
 				&-transparent {
 					@include transparent(var(--gray), calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken(rgb($gray), 10%);
+					}
 				}
 			}
 		}
