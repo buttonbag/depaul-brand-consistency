@@ -537,6 +537,19 @@ p.roboto strong {
 #containers .wrap-900 {
   height: 100px;
 }
+#containers .container-xl p, #containers .container-1920 p, #containers .container-lg p, #containers .container-1440 p, #containers .container-md p, #containers .container-1200 p, #containers .container-sm p, #containers .container-1080 p, #containers .container-xs p, #containers .container-900 p,
+#containers .wrap-xl p,
+#containers .wrap-1920 p,
+#containers .wrap-lg p,
+#containers .wrap-1440 p,
+#containers .wrap-md p,
+#containers .wrap-1200 p,
+#containers .wrap-sm p,
+#containers .wrap-1080 p,
+#containers .wrap-xs p,
+#containers .wrap-900 p {
+  margin-bottom: 0;
+}
 
 .btn {
   font-family: "Roboto";
