@@ -23,7 +23,7 @@
 	// text content
 	#text-content {
 		position: relative;
-		top: -150px;
+		top: -190px;
 		@include screen-max($screen-md) {
 			top: 0;
 			display: block !important;
@@ -52,16 +52,17 @@
 					max-width: 100%;
 				}
 				.hero-title {
-					background: rgba(var(--pri-blue), 0.5);
+					background: rgba(var(--pri-blue), 0.75);
 					z-index: 100;
 					position: relative;
-					padding: 3rem 1.5rem;
+					padding: 1rem 1.5rem;
+					width: 595px;
 					@include screen-max($screen-md) {
 						width: 100%;
 						background: rgba(var(--pri-blue), 1);
 					}
 					h1 {
-						font-family: 'DIN Pro';
+						font-family: 'DIN Pro bold';
 						font-weight: normal;
 						font-size: 4rem;
 						color: #fff;
@@ -77,15 +78,11 @@
 			}
 		}
 		.cta {
-			font-family: 'DIN Pro';
-			font-weight: normal;
-			font-size: 1.75rem;
 			background: rgba(var(--sec-blue), 1);
 			z-index: 80;
 			position: relative;
 			display: flex;
 			align-items: end;
-			height: 320px;
 			color: #fff;
 			padding: 2rem;
 			@include screen-max($screen-lg) {
@@ -101,9 +98,12 @@
 				max-width: 100% !important;
 			}
 			div {
-				padding-top: 8rem;
+				padding-top: 11rem;
 			}
 			p {
+				font-family: 'DIN Pro';
+				font-weight: normal;
+				font-size: 1.75rem;
 				margin: 0;
 			}
 			a {
@@ -120,10 +120,13 @@
 //triangle one
 .triangle-1 {
 	clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);
-	padding: 4rem 0;
+	padding: 8rem 0;
 	position: relative;
 	background: $gradient url('https://picsum.photos/900/600') center / cover;
 	background-blend-mode: overlay;
+	.btn {
+		font-size: 2.35rem;
+	}
 }
 
 // Triangle 2
@@ -144,4 +147,15 @@
 	position: relative;
 	background: rgba(var(--pri-blue));
 	background-blend-mode: overlay;
+	p {
+		font-size: 1.75rem;
+	}
+}
+
+.triangle-1,
+.triangle-2,
+.triangle-3 {
+	.header {
+		font-size: 58px;
+	}
 }

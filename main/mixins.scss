@@ -70,7 +70,6 @@ $tints: 100, 90, 80, 70, 60, 50, 40, 30, 20, 10;
 @mixin shadow($color) {
 	@include ghost($color);
 	box-shadow: 5px 5px 0 -1px rgba($color, 1) !important;
-	margin-bottom: 15px;
 }
 @mixin hover($color) {
 	background: rgba($color, 1);

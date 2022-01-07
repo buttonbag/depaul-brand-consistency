@@ -1,6 +1,6 @@
 // video and image headers
 .img-header-bg {
-	background-image: url('https://picsum.photos/1920/400') center center/cover;
+	background: url('https://picsum.photos/1920/400') center center/cover;
 	background-color: rgba(var(--gray), 0.5);
 	background-blend-mode: overlay;
 	padding: 6rem 0;
@@ -15,19 +15,37 @@
 		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 		border-bottom: 2px solid white;
 		box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
+		font-size: 3rem;
 	}
 	p {
 		text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 		padding: 1rem;
+		font-size: 1.75rem;
+	}
+	.no-border {
+		border: none !important;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+	}
+	.big {
+		font-size: 3.25rem;
 	}
 }
 
 //internal page img header
 .img-header {
-	background: url('https://picsum.photos/900/600') center / cover;
 	max-width: 100%;
 	height: 600px;
 	position: relative;
+	background: linear-gradient(
+			31.6deg,
+			rgba(0, 93, 186, 0.75) 27.08%,
+			rgba(0, 93, 186, 0) 46.04%
+		),
+		rgba(196, 196, 196, 0.75) url('https://picsum.photos/900/600') center /
+			cover;
+	background-blend-mode: hard-light, normal;
 
 	@include screen-max($screen-md) {
 		height: 400px;
@@ -42,18 +60,9 @@
 		left: 20px;
 		bottom: 0;
 	}
-	&::after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(
-				31.6deg,
-				rgba(0, 93, 186, 0.75) 27.08%,
-				rgba(0, 93, 186, 0) 46.04%
-			),
-			rgba(196, 196, 196, 0.75);
-		background-blend-mode: hard-light, normal;
+	&-wide {
+		@extend .img-header;
+		height: 353px;
 	}
 }
 

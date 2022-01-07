@@ -2,6 +2,7 @@ section {
 	.homepage {
 		color: rgba(var(--sec-blue), 1);
 		text-transform: uppercase;
+		font-size: 4rem;
 	}
 	h1,
 	h2,
@@ -30,10 +31,10 @@ section {
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 3.1rem;
 	}
 	h2 {
-		font-size: 2.6rem;
+		font-size: 2.63rem;
 	}
 	h3 {
 		font-size: 2.25rem;
@@ -53,26 +54,36 @@ section {
 }
 
 #typography {
-	p {
-		&.din,
-		&.roboto {
+	.font-stacks {
+		p {
 			font-size: 2.4rem;
-			color: #565656;
-		}
-		&.din {
-			font-family: 'DIN Pro';
-			strong {
-				font-family: 'DIN Pro Bold';
-			}
-			&.black {
-				font-family: 'DIN Pro Black';
-			}
-		}
-		&.roboto {
-			font-family: 'Roboto';
-			strong {
-				font-family: 'Roboto Bold';
-			}
+			margin: 0;
 		}
 	}
+}
+
+p {
+	&.din,
+	&.roboto {
+		color: #565656;
+	}
+	&.din {
+		font-family: 'DIN Pro';
+		strong {
+			font-family: 'DIN Pro Bold';
+		}
+		&.black {
+			font-family: 'DIN Pro Black';
+		}
+	}
+	&.roboto {
+		font-family: 'Roboto';
+		strong {
+			font-family: 'Roboto Bold';
+		}
+	}
+}
+
+.cam-case {
+	text-transform: capitalize !important;
 }

@@ -63,12 +63,17 @@ main section div h3 {
 .bc-backgrounds .bc-color-chip,
 .bc-text .bc-color-chip {
   text-align: center;
-  margin: 1rem;
   width: 150px;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bc-palette .bc-color-chip:nth-child(1n+2),
+.bc-tints .bc-color-chip:nth-child(1n+2),
+.bc-backgrounds .bc-color-chip:nth-child(1n+2),
+.bc-text .bc-color-chip:nth-child(1n+2) {
+  margin-left: 20px;
 }
 
 .dpu-bg-blue {
@@ -411,6 +416,7 @@ main section div h3 {
 section .homepage {
   color: rgba(var(--sec-blue), 1);
   text-transform: uppercase;
+  font-size: 4rem;
 }
 section h1,
 section h2,
@@ -437,10 +443,10 @@ section a {
   color: rgba(var(--pri-blue), 1);
 }
 section h1 {
-  font-size: 3rem;
+  font-size: 3.1rem;
 }
 section h2 {
-  font-size: 2.6rem;
+  font-size: 2.63rem;
 }
 section h3 {
   font-size: 2.25rem;
@@ -458,24 +464,32 @@ section p {
   font-size: 1.32rem;
 }
 
-#typography p.din, #typography p.roboto {
+#typography .font-stacks p {
   font-size: 2.4rem;
+  margin: 0;
+}
+
+p.din, p.roboto {
   color: #565656;
 }
-#typography p.din {
+p.din {
   font-family: "DIN Pro";
 }
-#typography p.din strong {
+p.din strong {
   font-family: "DIN Pro Bold";
 }
-#typography p.din.black {
+p.din.black {
   font-family: "DIN Pro Black";
 }
-#typography p.roboto {
+p.roboto {
   font-family: "Roboto";
 }
-#typography p.roboto strong {
+p.roboto strong {
   font-family: "Roboto Bold";
+}
+
+.cam-case {
+  text-transform: capitalize !important;
 }
 
 .container-xl, .container-lg, .container-md, .container-sm, .container-xs {
@@ -531,7 +545,6 @@ section p {
   background: transparent;
   color: rgba(var(--white), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--white), 1) !important;
-  margin-bottom: 15px;
 }
 .btn.white-ghost-shadow:hover {
   background: rgba(var(--white), 1);
@@ -557,7 +570,6 @@ section p {
   background: transparent;
   color: rgba(var(--red), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--red), 1) !important;
-  margin-bottom: 15px;
 }
 .btn.red-ghost-shadow:hover {
   background: rgba(var(--red), 1);
@@ -581,7 +593,6 @@ section p {
   background: transparent;
   color: rgba(var(--pri-blue), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--pri-blue), 1) !important;
-  margin-bottom: 15px;
 }
 .btn.blue-ghost-shadow:hover {
   background: rgba(var(--pri-blue), 1);
@@ -605,7 +616,6 @@ section p {
   background: transparent;
   color: rgba(var(--sec-blue), 1);
   box-shadow: 5px 5px 0 -1px rgba(var(--sec-blue), 1) !important;
-  margin-bottom: 15px;
 }
 .btn.blue-dark-ghost-shadow:hover {
   background: rgba(var(--sec-blue), 1);
@@ -636,7 +646,7 @@ section p {
 }
 #hero-container #text-content {
   position: relative;
-  top: -150px;
+  top: -190px;
 }
 @media screen and (max-width: 820px) {
   #hero-container #text-content {
@@ -675,10 +685,11 @@ section p {
   }
 }
 #hero-container #text-content .hero-text .hero-content .hero-title {
-  background: rgba(var(--pri-blue), 0.5);
+  background: rgba(var(--pri-blue), 0.75);
   z-index: 100;
   position: relative;
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
+  width: 595px;
 }
 @media screen and (max-width: 820px) {
   #hero-container #text-content .hero-text .hero-content .hero-title {
@@ -687,7 +698,7 @@ section p {
   }
 }
 #hero-container #text-content .hero-text .hero-content .hero-title h1 {
-  font-family: "DIN Pro";
+  font-family: "DIN Pro bold";
   font-weight: normal;
   font-size: 4rem;
   color: #fff;
@@ -704,15 +715,11 @@ section p {
   }
 }
 #hero-container #text-content .cta {
-  font-family: "DIN Pro";
-  font-weight: normal;
-  font-size: 1.75rem;
   background: rgba(var(--sec-blue), 1);
   z-index: 80;
   position: relative;
   display: flex;
   align-items: end;
-  height: 320px;
   color: #fff;
   padding: 2rem;
 }
@@ -735,9 +742,12 @@ section p {
   }
 }
 #hero-container #text-content .cta div {
-  padding-top: 8rem;
+  padding-top: 11rem;
 }
 #hero-container #text-content .cta p {
+  font-family: "DIN Pro";
+  font-weight: normal;
+  font-size: 1.75rem;
   margin: 0;
 }
 #hero-container #text-content .cta a {
@@ -750,10 +760,13 @@ section p {
 
 .triangle-1 {
   clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);
-  padding: 4rem 0;
+  padding: 8rem 0;
   position: relative;
   background: linear-gradient(180deg, rgba(26, 76, 141, 0) 60.42%, rgba(var(--sec-blue), 0.75) 88.54%), rgba(var(--pri-blue), 0.75) url("https://picsum.photos/900/600") center/cover;
   background-blend-mode: overlay;
+}
+.triangle-1 .btn {
+  font-size: 2.35rem;
 }
 
 .triangle-2 {
@@ -773,9 +786,18 @@ section p {
   background: rgba(var(--pri-blue));
   background-blend-mode: overlay;
 }
+.triangle-3 p {
+  font-size: 1.75rem;
+}
+
+.triangle-1 .header,
+.triangle-2 .header,
+.triangle-3 .header {
+  font-size: 58px;
+}
 
 .img-header-bg {
-  background-image: url("https://picsum.photos/1920/400") center center/cover;
+  background: url("https://picsum.photos/1920/400") center center/cover;
   background-color: rgba(var(--gray), 0.5);
   background-blend-mode: overlay;
   padding: 6rem 0;
@@ -791,41 +813,48 @@ section p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid white;
   box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
+  font-size: 3rem;
 }
 .img-header-bg p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   padding: 1rem;
+  font-size: 1.75rem;
+}
+.img-header-bg .no-border {
+  border: none !important;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.img-header-bg .big {
+  font-size: 3.25rem;
 }
 
-.img-header {
-  background: url("https://picsum.photos/900/600") center/cover;
+.img-header, .img-header-wide {
   max-width: 100%;
   height: 600px;
   position: relative;
+  background: linear-gradient(31.6deg, rgba(0, 93, 186, 0.75) 27.08%, rgba(0, 93, 186, 0) 46.04%), rgba(196, 196, 196, 0.75) url("https://picsum.photos/900/600") center/cover;
+  background-blend-mode: hard-light, normal;
 }
 @media screen and (max-width: 820px) {
-  .img-header {
+  .img-header, .img-header-wide {
     height: 400px;
   }
 }
 @media screen and (max-width: 414px) {
-  .img-header {
+  .img-header, .img-header-wide {
     height: 300px;
   }
 }
-.img-header h1 {
+.img-header h1, .img-header-wide h1 {
   position: absolute;
   z-index: 100;
   left: 20px;
   bottom: 0;
 }
-.img-header::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(31.6deg, rgba(0, 93, 186, 0.75) 27.08%, rgba(0, 93, 186, 0) 46.04%), rgba(196, 196, 196, 0.75);
-  background-blend-mode: hard-light, normal;
+.img-header-wide {
+  height: 353px;
 }
 
 .clip, .clip-right-bottom, .clip-right-top, .clip-left-bottom, .clip-left-top {
@@ -913,6 +942,7 @@ section p {
 .footer a,
 .footer p {
   color: rgba(var(--white));
+  line-height: 1.8;
 }
 .footer .fab {
   width: 48px;
