@@ -1350,7 +1350,7 @@ a {
 .wrap-1200,
 .wrap-1080,
 .wrap-900 {
-  margin: 1rem auto;
+  margin: 0 auto;
   font-family: "Roboto";
   font-size: 1.2rem;
   color: rgba(var(--gray), 1);
@@ -1388,6 +1388,7 @@ a {
 #containers .wrap-xs,
 #containers .wrap-900 {
   height: 100px;
+  margin: 1rem auto;
 }
 #containers .container-xl p, #containers .container-1920 p, #containers .container-lg p, #containers .container-1440 p, #containers .container-md p, #containers .container-1200 p, #containers .container-sm p, #containers .container-1080 p, #containers .container-xs p, #containers .container-900 p,
 #containers .wrap-xl p,
@@ -1682,14 +1683,18 @@ a {
 .triangle-2 .header,
 .triangle-3 .header {
   font-size: 58px;
+  padding: 0;
 }
 
 .img-header-bg {
   background: url("https://picsum.photos/1920/400") center center/cover;
   background-color: rgba(var(--gray), 0.5);
   background-blend-mode: overlay;
-  padding: 6rem 0;
+  padding: 6.3rem 0;
   text-align: center;
+}
+.img-header-bg > div {
+  padding: 0.7rem 0 2rem;
 }
 .img-header-bg h1,
 .img-header-bg h2,
@@ -1700,7 +1705,7 @@ a {
   text-transform: uppercase;
   border-bottom: 2px solid white;
   box-shadow: 0px 2px 0px rgba(var(--sec-blue), 0.8);
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .img-header-bg p {
   padding: 1rem;
