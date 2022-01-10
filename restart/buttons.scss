@@ -8,65 +8,62 @@
 	white-space: nowrap;
 }
 
-.btn {
+@mixin ghost($color: $blue) {
 	@include btn;
+	border: 2px solid $color;
+	background-color: $white;
+	color: $color;
+}
+
+@mixin shadow($color: $blue) {
+	@include btn;
+	@include ghost($color);
+	box-shadow: 5px 5px 0 $color;
+}
+@mixin transparent($color: $blue) {
+	@include ghost($color);
+	@include shadow($color);
+	background-color: transparent;
+}
+@mixin dark($color) {
+	@include ghost($color);
+}
+
+.btn {
+	background-color: $blue;
+	color: $white;
+	border-radius: 0;
+	font-size: 1.3rem;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	white-space: nowrap;
 	&.red {
 		@include btn($red, $white);
-		&-ghost {
-			@extend .red;
-			background-color: $white;
-			color: $red;
-			border: 2px solid $red;
+		&.ghost {
+			@include ghost($red);
 			&-shadow {
-				@extend .red-ghost;
-				box-shadow: 5px 5px 0 $red;
+				@include shadow($red);
 				&-t {
-					@extend .red-ghost-shadow;
-					background-color: transparent;
+					@include transparent($red);
 				}
-			}
-			&-t {
-				@extend .red-ghost;
-				background-color: transparent;
 			}
 		}
 	}
 	&.blue {
 		@include btn($blue, $white);
-		&-ghost {
-			@extend .blue;
-			background-color: $white;
-			color: $blue;
-			border: 2px solid $blue;
+		&.ghost {
+			@include ghost($blue);
 			&-shadow {
-				@extend .blue-ghost;
-				box-shadow: 5px 5px 0 $blue;
+				@include shadow($blue);
 			}
 		}
 	}
 	&.darkblue {
 		@include btn($darkblue, $white);
-		&-ghost {
-			@extend .darkblue;
-			background-color: $white;
-			color: $darkblue;
-			border: 2px solid $darkblue;
+		&.ghost {
+			@include ghost($darkblue);
 			&-shadow {
-				@extend .darkblue-ghost;
-				box-shadow: 5px 5px 0 $darkblue;
-			}
-		}
-	}
-	&.white {
-		@include btn($white, $white);
-		&-ghost {
-			@extend .white;
-			background-color: $white;
-			color: $white;
-			border: 2px solid $white;
-			&-shadow {
-				@extend .white-ghost;
-				box-shadow: 5px 5px 0 $white;
+				@include shadow($darkblue);
 			}
 		}
 	}
