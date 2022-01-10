@@ -11,3 +11,5 @@ As expected, running into issues with redefining simple bootstrap classnames wit
 -
 
 add photo grid, skip the nav bar for now, convert the container names
+
+It helps to know design system rules and how those were determined. Examples include font sizing for specific headers, what gets a shadow and what doesn't and also the page itself should be utilizing those rules that were already established as a way to showcase them.
