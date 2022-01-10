@@ -1,0 +1,19 @@
+.img-header {
+	background: url('https://picsum.photos/1920/570');
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: overlay;
+	height: 570px;
+	color: $white;
+	margin-bottom: 2rem;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-overlay {
+		background-color: rgba($blue, 0.75);
+		flex: 1 1 auto;
+		text-align: center;
+		padding: 1.5rem;
+	}
+}

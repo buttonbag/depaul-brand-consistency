@@ -1,0 +1,73 @@
+@mixin btn($bg: $blue, $text: $white) {
+	background-color: $bg;
+	color: $text;
+	border-radius: 0;
+	font-size: 1.3rem;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.btn {
+	@include btn;
+	&.red {
+		@include btn($red, $white);
+		&-ghost {
+			@extend .red;
+			background-color: $white;
+			color: $red;
+			border: 2px solid $red;
+			&-shadow {
+				@extend .red-ghost;
+				box-shadow: 5px 5px 0 $red;
+				&-t {
+					@extend .red-ghost-shadow;
+					background-color: transparent;
+				}
+			}
+			&-t {
+				@extend .red-ghost;
+				background-color: transparent;
+			}
+		}
+	}
+	&.blue {
+		@include btn($blue, $white);
+		&-ghost {
+			@extend .blue;
+			background-color: $white;
+			color: $blue;
+			border: 2px solid $blue;
+			&-shadow {
+				@extend .blue-ghost;
+				box-shadow: 5px 5px 0 $blue;
+			}
+		}
+	}
+	&.darkblue {
+		@include btn($darkblue, $white);
+		&-ghost {
+			@extend .darkblue;
+			background-color: $white;
+			color: $darkblue;
+			border: 2px solid $darkblue;
+			&-shadow {
+				@extend .darkblue-ghost;
+				box-shadow: 5px 5px 0 $darkblue;
+			}
+		}
+	}
+	&.white {
+		@include btn($white, $white);
+		&-ghost {
+			@extend .white;
+			background-color: $white;
+			color: $white;
+			border: 2px solid $white;
+			&-shadow {
+				@extend .white-ghost;
+				box-shadow: 5px 5px 0 $white;
+			}
+		}
+	}
+}

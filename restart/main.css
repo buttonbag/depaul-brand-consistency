@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "DINpro";
+  src: url("./fonts/DINPro/DINPro-Cond.woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "DINpro";
+  src: url("./fonts/DINPro/DINPro-CondBold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DINpro";
+  src: url("./fonts/DINPro/DINPro-Black.woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 21px;
+  color: gray;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "DINPro";
+  font-weight: 700;
+  color: blue;
+}
+h1.rollup,
+h2.rollup,
+h3.rollup {
+  border-bottom: 3px solid blue;
+  padding-bottom: 1rem;
+}
+h1.homepage,
+h2.homepage,
+h3.homepage {
+  font-size: 58px;
+  text-transform: uppercase;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.13rem;
+}
+
+h2 {
+  font-size: 2.65rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 {
+  font-size: 1.38rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Roboto";
+}
+p.din, p.din-blk {
+  font-family: "DINPro";
+}
+p.din-blk {
+  font-weight: 900;
+}
+
+.container-1920, .container-1440, .container-1200, .container-1080, .container-900,
+.wrap-1920,
+.wrap-1440,
+.wrap-1200,
+.wrap-1080,
+.wrap-900 {
+  margin: 0 auto;
+}
+.container-1920,
+.wrap-1920 {
+  max-width: 1920px;
+}
+.container-1440,
+.wrap-1440 {
+  max-width: 1440px;
+}
+.container-1200,
+.wrap-1200 {
+  max-width: 1200px;
+}
+.container-1080,
+.wrap-1080 {
+  max-width: 1080px;
+}
+.container-900,
+.wrap-900 {
+  max-width: 900px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bc-title, .bc-section-title, .bc-subhead {
+  font-family: "Roboto";
+  font-weight: normal;
+  color: blue;
+}
+.bc-section-title {
+  text-transform: capitalize;
+  margin-top: 1.25rem;
+}
+.bc-subhead {
+  text-transform: capitalize;
+}
+.bc-border {
+  border: 1px solid blue;
+}
+.bc-border-red-bottom {
+  border-bottom: 1px solid red;
+  margin-bottom: 1rem;
+}
+.bc-height-100 {
+  height: 100px;
+}
+
+.font-stacks p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.red, .btn.red-ghost, .btn.red-ghost-t, .btn.red-ghost-shadow, .btn.red-ghost-shadow-t {
+  background-color: red;
+  color: white;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.red-ghost, .btn.red-ghost-t, .btn.red-ghost-shadow, .btn.red-ghost-shadow-t {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+.btn.red-ghost-shadow, .btn.red-ghost-shadow-t {
+  box-shadow: 5px 5px 0 red;
+}
+.btn.red-ghost-shadow-t {
+  background-color: transparent;
+}
+.btn.red-ghost-t {
+  background-color: transparent;
+}
+.btn.blue, .btn.blue-ghost, .btn.blue-ghost-shadow {
+  background-color: blue;
+  color: white;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.blue-ghost, .btn.blue-ghost-shadow {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+}
+.btn.blue-ghost-shadow {
+  box-shadow: 5px 5px 0 blue;
+}
+.btn.darkblue, .btn.darkblue-ghost, .btn.darkblue-ghost-shadow {
+  background-color: darkblue;
+  color: white;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.darkblue-ghost, .btn.darkblue-ghost-shadow {
+  background-color: white;
+  color: darkblue;
+  border: 2px solid darkblue;
+}
+.btn.darkblue-ghost-shadow {
+  box-shadow: 5px 5px 0 darkblue;
+}
+.btn.white, .btn.white-ghost, .btn.white-ghost-shadow {
+  background-color: white;
+  color: white;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn.white-ghost, .btn.white-ghost-shadow {
+  background-color: white;
+  color: white;
+  border: 2px solid white;
+}
+.btn.white-ghost-shadow {
+  box-shadow: 5px 5px 0 white;
+}
+
+.img-header {
+  background: url("https://picsum.photos/1920/570");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  height: 570px;
+  color: white;
+  margin-bottom: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-header-overlay {
+  background-color: rgba(0, 0, 255, 0.75);
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
