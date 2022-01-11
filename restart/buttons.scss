@@ -10,8 +10,8 @@
 
 @mixin ghost($color: $blue) {
 	@include btn;
-	border: 2px solid $color;
-	background-color: $white;
+	background-color: transparent;
+	border: 3px solid $color;
 	color: $color;
 }
 
@@ -20,11 +20,7 @@
 	@include ghost($color);
 	box-shadow: 5px 5px 0 $color;
 }
-@mixin transparent($color: $blue) {
-	@include ghost($color);
-	@include shadow($color);
-	background-color: transparent;
-}
+
 @mixin dark($color) {
 	@include ghost($color);
 }
@@ -37,14 +33,18 @@
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	white-space: nowrap;
+	font-family: 'Roboto';
+	text-shadow: none;
 	&.red {
 		@include btn($red, $white);
 		&.ghost {
 			@include ghost($red);
 			&-shadow {
 				@include shadow($red);
-				&-t {
-					@include transparent($red);
+				&-o {
+					@include ghost($red);
+					@include shadow($red);
+					background-color: $white;
 				}
 			}
 		}
@@ -55,6 +55,11 @@
 			@include ghost($blue);
 			&-shadow {
 				@include shadow($blue);
+				&-o {
+					@include ghost($blue);
+					@include shadow($blue);
+					background-color: $white;
+				}
 			}
 		}
 	}
@@ -64,6 +69,25 @@
 			@include ghost($darkblue);
 			&-shadow {
 				@include shadow($darkblue);
+				&-o {
+					@include ghost($darkblue);
+					@include shadow($darkblue);
+					background-color: $white;
+				}
+			}
+		}
+	}
+	&.white {
+		@include btn($white, $white);
+		&.ghost {
+			@include ghost($white);
+			&-shadow {
+				@include shadow($white);
+				&-o {
+					@include ghost($white);
+					@include shadow($white);
+					background-color: $white;
+				}
 			}
 		}
 	}

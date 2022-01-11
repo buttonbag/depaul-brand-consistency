@@ -1,0 +1,214 @@
+// uhe
+$gradient: linear-gradient(
+		180deg,
+		rgba(26, 76, 141, 0) 60.42%,
+		rgba($darkblue, 0.75) 88.54%
+	),
+	rgba($blue, 0.75);
+
+// hero area
+#hero-container {
+	max-width: 1920px;
+	margin: 0 auto;
+	.chevron {
+		clip-path: polygon(100% 0, 100% 86%, 65% 100%, 0 86%, 0 0);
+		background: url(https://via.placeholder.com/1920x950) 50% 50% / cover
+			no-repeat;
+		height: 600px;
+		z-index: 90;
+		position: relative;
+		@include screen-max($screen-md) {
+			clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+			height: 50vh;
+		}
+		@include screen-max($screen-sm) {
+			height: 30vh;
+		}
+	}
+
+	// text content
+	#text-content {
+		position: relative;
+		top: -190px;
+		@include screen-max($screen-md) {
+			top: 0;
+			display: block !important;
+			padding: 0;
+		}
+		.hero-text {
+			max-width: 1440px;
+			margin: 0 auto;
+			@include screen-max($screen-md) {
+				padding: 0;
+				max-width: 100%;
+				flex-wrap: nowrap;
+			}
+			@include screen-max($screen-sm) {
+				flex-wrap: wrap;
+			}
+
+			.hero-content {
+				@include screen-max($screen-md) {
+					padding: 0;
+					flex: 0 0 auto;
+					max-width: 60%;
+					background: rgba($blue, 1);
+				}
+				@include screen-max($screen-sm) {
+					max-width: 100%;
+				}
+				.hero-title {
+					background: rgba($blue, 0.75);
+					z-index: 100;
+					position: relative;
+					padding: 1rem 1.5rem;
+					width: 595px;
+					@include screen-max($screen-md) {
+						width: 100%;
+						background: rgba($blue, 1);
+					}
+					h1 {
+						font-family: 'DIN Pro bold';
+						font-weight: normal;
+						font-size: 4rem;
+						color: #fff;
+						text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+						@include screen-max($screen-lg) {
+							font-size: 3rem;
+						}
+						@include screen-max($screen-sm) {
+							font-size: 2rem;
+						}
+					}
+				}
+			}
+		}
+		.cta {
+			background: rgba($darkblue, 1);
+			z-index: 80;
+			position: relative;
+			display: flex;
+			align-items: end;
+			color: #fff;
+			padding: 2rem;
+			@include screen-max($screen-lg) {
+				font-size: 1.5rem;
+			}
+			@include screen-max($screen-md) {
+				flex: 0 0 auto;
+				max-width: 40% !important;
+				height: auto;
+				align-items: center;
+			}
+			@include screen-max($screen-sm) {
+				max-width: 100% !important;
+			}
+			div {
+				padding-top: 11rem;
+			}
+			p {
+				font-family: 'DIN Pro';
+				font-weight: normal;
+				font-size: 1.75rem;
+				margin: 0;
+			}
+			a {
+				font-family: 'Roboto';
+				font-weight: normal;
+				font-size: 1.3rem;
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+//triangle one
+.triangle-1 {
+	clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);
+	padding: 8rem 0;
+	position: relative;
+	background: $gradient url('https://picsum.photos/900/600') center / cover;
+	background-blend-mode: overlay;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.btn {
+		font-size: 2.35rem !important;
+		text-shadow: 2px 2px $darkblue;
+		background: rgba($darkblue, 0.75);
+		background-blend-mode: multiply;
+		border: 3px solid $white;
+	}
+}
+
+// Triangle 2
+.triangle-2 {
+	clip-path: polygon(67.03% 14.83%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+	height: 400px;
+	position: relative;
+	background: $gradient url('https://picsum.photos/900/600') center / cover;
+	background-blend-mode: overlay;
+	display: flex;
+	align-items: center;
+	a {
+		font-size: 1.25rem;
+	}
+}
+
+// Triangle 3
+.triangle-3 {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 31.13% 78.5%, 0% 100%);
+	padding: 3rem 0 8rem;
+	position: relative;
+	background: rgba($blue, 1);
+	background-blend-mode: overlay;
+	p {
+		font-size: 1.75rem;
+	}
+}
+
+.triangle-1,
+.triangle-2,
+.triangle-3 {
+	.header {
+		font-size: 58px;
+		padding: 0;
+	}
+}
+
+// photo bg red box
+.photo-bg {
+	background: url('https://picsum.photos/1920/410') center / cover;
+	background: url('https://via.placeholder.com/1920x410') center / cover;
+	height: 410px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	text-transform: capitalize;
+
+	&-overlay {
+		background-color: rgba($red, 0.75);
+		flex: 1 1 auto;
+		text-align: center;
+		padding: 3rem;
+		color: $white;
+
+		.title {
+			color: $white;
+			text-shadow: 2px 2px darken($red, 10%);
+			font-size: 3.5rem;
+		}
+		p {
+			font-family: 'DINPro';
+			text-transform: none;
+			font-size: 1.75rem;
+		}
+		a {
+			background-color: $white !important;
+		}
+	}
+}

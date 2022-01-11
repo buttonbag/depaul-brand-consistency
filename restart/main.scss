@@ -108,36 +108,10 @@ p {
 	}
 }
 
-// container
-.container,
-.wrap {
-	&-1920,
-	&-1440,
-	&-1200,
-	&-1080,
-	&-900 {
-		margin: 0 auto;
-	}
-
-	&-1920 {
-		max-width: 1920px;
-	}
-	&-1440 {
-		max-width: 1440px;
-	}
-	&-1200 {
-		max-width: 1200px;
-	}
-	&-1080 {
-		max-width: 1080px;
-	}
-	&-900 {
-		max-width: 900px;
-	}
-}
-
 @import 'bc-styles';
 @import 'colors';
 @import 'buttons';
+@import 'containers';
+@import 'uhe';
 @import 'panels';
 @import 'webparts';
