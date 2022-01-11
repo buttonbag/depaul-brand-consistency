@@ -1,0 +1,142 @@
+.dpu-bg {
+	&-blue {
+		@include bg($blue);
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color($blue, 100%-$tint);
+				&-transparent {
+					@include transparent($blue, calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken($blue, 10%);
+					}
+				}
+			}
+		}
+	}
+	&-dark-blue {
+		@include bg($darkblue);
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color($darkblue, 100%-$tint);
+				&-transparent {
+					@include transparent(var(--sec-blue), calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken($darkblue, 10%);
+					}
+				}
+			}
+		}
+	}
+	&-red {
+		@include bg($red);
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color($red, 100%-$tint);
+				&-transparent {
+					@include transparent($red, calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken($red, 10%);
+					}
+				}
+			}
+		}
+	}
+	&-white {
+		@include bg($white);
+	}
+	&-gray {
+		@include bg($gray);
+		@each $tint in $tints {
+			&-#{$tint} {
+				@include color($gray, 100%-$tint);
+				&-transparent {
+					@include transparent($gray, calc($tint/100));
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6 {
+						text-shadow: 2px 2px 0px darken($gray, 10%);
+					}
+				}
+			}
+		}
+	}
+}
+
+.tint {
+	flex: 1 1 auto;
+	margin: 1px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	height: 150px;
+
+	.tint-label {
+		display: flex;
+		justify-content: flex-end;
+		color: $gray;
+		font-size: 0.75rem;
+	}
+	.bc-blue-tint {
+		height: 5rem;
+		margin: 1px 0;
+	}
+	.bc-red-tint {
+		height: 3rem;
+		margin: 1px 0;
+	}
+	.bc-dark-blue-tint {
+		height: 4rem;
+		margin: 1px 0;
+	}
+}
+
+.text {
+	&-blue {
+		color: rgba($blue, 1);
+	}
+	&-red {
+		color: rgba($red, 1);
+	}
+	&-dark-blue {
+		color: rgba($darkblue, 1);
+	}
+	&-gray {
+		color: rgba($gray, 1);
+	}
+	&-white {
+		color: rgba($white, 1);
+	}
+}
+
+.border {
+	&-blue {
+		@include border(1px, $blue);
+	}
+	&-dark-blue {
+		@include border(1px, $darkblue);
+	}
+	&-red {
+		@include border(1px, $red);
+	}
+	&-gray {
+		@include border(1px, $gray);
+	}
+}

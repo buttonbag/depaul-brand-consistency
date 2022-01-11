@@ -1,0 +1,17 @@
+@mixin text($color) {
+	color: rgba($color, 1);
+}
+@mixin bg($color) {
+	background: rgba($color, 1);
+}
+@mixin border($size, $color) {
+	border: $size solid rgba($color, 1);
+}
+@mixin color($color, $amount) {
+	$color: scale-color($color, $lightness: $amount);
+	background-color: $color;
+}
+@mixin transparent($color, $amount) {
+	$color: rgba($color, $amount);
+	background: $color;
+}

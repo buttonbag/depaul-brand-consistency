@@ -48,3 +48,17 @@ body {
 		font-size: 2rem;
 	}
 }
+
+// colors
+.bc-color-chip {
+	background: black;
+	color: white;
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:nth-child(1n + 2) {
+		margin-left: 1rem;
+	}
+}
