@@ -5,6 +5,9 @@ $darkblue: #0e4174;
 $red: #af272f;
 $white: #ffffff;
 $gray: #565656;
+$tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
+	10;
+
 :root {
 	--blue: #{$blue};
 	--darkblue: #{$darkblue};
@@ -12,14 +15,17 @@ $gray: #565656;
 	--white: #{$white};
 	--gray: #{$gray};
 }
-$tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
-	10;
 
 // fonts
 @font-face {
 	font-family: 'DINpro';
 	src: url('./fonts/DINPro/DINPro-Cond.woff');
 	font-weight: normal;
+}
+@font-face {
+	font-family: 'DINpro';
+	src: url('./fonts/DINPro/DINPro-CondMedium.woff');
+	font-weight: 600;
 }
 @font-face {
 	font-family: 'DINpro';
