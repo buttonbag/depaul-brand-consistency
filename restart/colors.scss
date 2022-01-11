@@ -4,7 +4,7 @@
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color($blue, 100%-$tint);
-				&-transparent {
+				&-t {
 					@include transparent($blue, calc($tint/100));
 					h1,
 					h2,
@@ -18,13 +18,13 @@
 			}
 		}
 	}
-	&-dark-blue {
+	&-darkblue {
 		@include bg($darkblue);
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color($darkblue, 100%-$tint);
-				&-transparent {
-					@include transparent(var(--sec-blue), calc($tint/100));
+				&-t {
+					@include transparent($darkblue, calc($tint/100));
 					h1,
 					h2,
 					h3,
@@ -42,7 +42,7 @@
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color($red, 100%-$tint);
-				&-transparent {
+				&-t {
 					@include transparent($red, calc($tint/100));
 					h1,
 					h2,
@@ -64,7 +64,7 @@
 		@each $tint in $tints {
 			&-#{$tint} {
 				@include color($gray, 100%-$tint);
-				&-transparent {
+				&-t {
 					@include transparent($gray, calc($tint/100));
 					h1,
 					h2,
@@ -102,7 +102,7 @@
 		height: 3rem;
 		margin: 1px 0;
 	}
-	.bc-dark-blue-tint {
+	.bc-darkblue-tint {
 		height: 4rem;
 		margin: 1px 0;
 	}
@@ -115,7 +115,7 @@
 	&-red {
 		color: rgba($red, 1);
 	}
-	&-dark-blue {
+	&-darkblue {
 		color: rgba($darkblue, 1);
 	}
 	&-gray {
@@ -130,7 +130,7 @@
 	&-blue {
 		@include border(1px, $blue);
 	}
-	&-dark-blue {
+	&-darkblue {
 		@include border(1px, $darkblue);
 	}
 	&-red {

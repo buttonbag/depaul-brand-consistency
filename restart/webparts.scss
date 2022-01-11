@@ -1,0 +1,29 @@
+//footer
+.footer {
+	background: $darkblue;
+	text-align: center;
+	color: $white;
+	margin-top: 0 !important;
+	padding-bottom: 0;
+	a,
+	p {
+		color: $white;
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	.fab {
+		width: 48px;
+		height: 48px;
+		text-decoration: none;
+		color: $white;
+		font-size: 2rem;
+	}
+	.copyright {
+		font-family: 'Roboto';
+		font-size: 1rem;
+		a {
+			font-size: 1rem;
+			text-decoration: none;
+		}
+	}
+}

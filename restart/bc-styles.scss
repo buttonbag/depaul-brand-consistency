@@ -1,7 +1,3 @@
-// mixins
-
-// fonts
-
 // main
 html,
 body {
@@ -10,6 +6,7 @@ body {
 }
 
 .bc {
+	// main section headers subhead and titles
 	&-title,
 	&-section-title,
 	&-subhead {
@@ -35,9 +32,25 @@ body {
 		margin-bottom: 1rem;
 	}
 
+	// general use height 100px property
 	&-height {
 		&-100 {
 			height: 100px;
+		}
+	}
+
+	// colors palette section
+	&-color-chip {
+		font-size: 1.15rem;
+		background: black;
+		color: white;
+		width: 150px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:nth-child(1n + 2) {
+			margin-left: 1rem;
 		}
 	}
 }
@@ -46,19 +59,5 @@ body {
 	p {
 		margin: 0;
 		font-size: 2rem;
-	}
-}
-
-// colors
-.bc-color-chip {
-	background: black;
-	color: white;
-	width: 150px;
-	height: 150px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&:nth-child(1n + 2) {
-		margin-left: 1rem;
 	}
 }
