@@ -6,13 +6,14 @@
 				@include color($blue, 100%-$tint);
 				&-t {
 					@include transparent($blue, calc($tint/100));
-					h1,
-					h2,
-					h3,
-					h4,
-					h5,
-					h6 {
-						text-shadow: 2px 2px 0px darken($blue, 10%);
+					.header {
+						text-shadow: 2px 2px 0px darken($blue, 12%);
+						&.line {
+							box-shadow: 0px 2px 0px darken($blue, 12%) !important;
+						}
+					}
+					.content {
+						text-shadow: 2px 2px 0px darken($blue, 12%);
 					}
 				}
 			}
@@ -25,13 +26,14 @@
 				@include color($darkblue, 100%-$tint);
 				&-t {
 					@include transparent($darkblue, calc($tint/100));
-					h1,
-					h2,
-					h3,
-					h4,
-					h5,
-					h6 {
-						text-shadow: 2px 2px 0px darken($darkblue, 10%);
+					.header {
+						text-shadow: 2px 2px 0px darken($darkblue, 12%);
+						&.line {
+							box-shadow: 0px 2px 0px darken($darkblue, 12%) !important;
+						}
+					}
+					.content {
+						text-shadow: 2px 2px 0px darken($darkblue, 12%);
 					}
 				}
 			}
@@ -44,13 +46,14 @@
 				@include color($red, 100%-$tint);
 				&-t {
 					@include transparent($red, calc($tint/100));
-					h1,
-					h2,
-					h3,
-					h4,
-					h5,
-					h6 {
-						text-shadow: 2px 2px 0px darken($red, 10%);
+					.header {
+						text-shadow: 2px 2px 0px darken($red, 12%);
+						&.line {
+							box-shadow: 0px 2px 0px darken($red, 12%) !important;
+						}
+					}
+					.content {
+						text-shadow: 2px 2px 0px darken($red, 12%);
 					}
 				}
 			}
@@ -66,13 +69,14 @@
 				@include color($gray, 100%-$tint);
 				&-t {
 					@include transparent($gray, calc($tint/100));
-					h1,
-					h2,
-					h3,
-					h4,
-					h5,
-					h6 {
-						text-shadow: 2px 2px 0px darken($gray, 10%);
+					.header {
+						text-shadow: 2px 2px 0px darken($gray, 12%);
+						&.line {
+							box-shadow: 0px 2px 0px darken($gray, 12%) !important;
+						}
+					}
+					.content {
+						text-shadow: 2px 2px 0px darken($gray, 12%);
 					}
 				}
 			}

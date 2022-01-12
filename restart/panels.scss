@@ -1,7 +1,7 @@
 .img-header {
-	background: url('https://picsum.photos/1920/570') center / cover;
-	background-color: rgba(0, 0, 0, 0.5);
-	background-blend-mode: overlay;
+	background: url('https://via.placeholder.com/1920x570') center / cover;
+	// background-color: rgba(0, 0, 0, 0.5);
+	// background-blend-mode: overlay;
 	height: 570px;
 	color: $white;
 	margin-bottom: 2rem;
@@ -11,22 +11,21 @@
 	align-items: center;
 
 	&-overlay {
-		background-color: rgba($blue, 0.75);
 		flex: 1 1 auto;
 		text-align: center;
 		padding: 1.5rem;
 
-		h1 {
-			border-bottom: 3px solid white;
-			box-shadow: 0px 2px black;
-			text-shadow: 2px 2px black;
+		.header {
 			padding-bottom: 1rem;
 			margin-bottom: 1rem;
 			font-size: 3.5rem;
 			text-transform: uppercase;
+			&.line {
+				border-bottom: 3px solid white;
+			}
 		}
-		p {
-			text-shadow: 2px 2px black;
+		.content {
+			padding: 1rem;
 			font-size: 1.63rem;
 		}
 	}

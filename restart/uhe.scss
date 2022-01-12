@@ -196,24 +196,19 @@ $gradient: linear-gradient(
 	text-transform: capitalize;
 
 	&-overlay {
-		background-color: rgba($red, 0.75);
 		flex: 1 1 auto;
 		text-align: center;
 		padding: 3rem;
 		color: $white;
 
-		.title {
-			color: $white;
-			text-shadow: 2px 2px darken($red, 10%);
+		.header {
 			font-size: 3.5rem;
 		}
-		p {
+		.content {
 			font-family: 'DINPro';
 			text-transform: none;
 			font-size: 1.75rem;
-		}
-		a {
-			background-color: $white !important;
+			text-shadow: none;
 		}
 	}
 }
