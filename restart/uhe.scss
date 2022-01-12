@@ -146,13 +146,18 @@ $gradient: linear-gradient(
 
 // Triangle 2
 .triangle-2 {
-	clip-path: polygon(67.03% 14.83%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
-	height: 400px;
+	clip-path: polygon(67.03% 24.83%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
 	position: relative;
-	background: $gradient url('https://picsum.photos/900/600') center / cover;
+	background: linear-gradient(
+			180deg,
+			rgba(26, 76, 141, 0) 60.42%,
+			rgba(14, 65, 116, 0.75) 88.54%
+		),
+		rgba(0, 87, 183, 0.75) url(https://picsum.photos/900/600) center/cover;
 	background-blend-mode: overlay;
 	display: flex;
 	align-items: center;
+	padding: 6rem 0 2rem;
 	a {
 		font-size: 1.25rem;
 	}
@@ -160,13 +165,13 @@ $gradient: linear-gradient(
 
 // Triangle 3
 .triangle-3 {
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 31.13% 78.5%, 0% 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 38% 78.5%, 0% 100%);
 	padding: 3rem 0 8rem;
 	position: relative;
 	background: rgba($blue, 1);
 	background-blend-mode: overlay;
 	p {
-		font-size: 1.75rem;
+		font-size: 1.95rem;
 	}
 }
 

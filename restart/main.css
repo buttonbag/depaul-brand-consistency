@@ -1317,6 +1317,8 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
 }
 .btn.red.ghost {
   background-color: #0057b7;
@@ -1326,11 +1328,13 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #af272f;
   color: #af272f;
 }
-.btn.red.ghost-shadow {
+.btn.red.ghost-shadow, .btn.red.ghost-shadow-o {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -1338,47 +1342,14 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #af272f;
   color: #af272f;
   box-shadow: 5px 5px 0 #af272f;
 }
 .btn.red.ghost-shadow-o {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #af272f;
-  color: #af272f;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #af272f;
-  color: #af272f;
-  box-shadow: 5px 5px 0 #af272f;
   background-color: #ffffff;
 }
 .btn.blue {
@@ -1389,6 +1360,8 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
 }
 .btn.blue.ghost {
   background-color: #0057b7;
@@ -1398,11 +1371,13 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #0057b7;
   color: #0057b7;
 }
-.btn.blue.ghost-shadow {
+.btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -1410,47 +1385,14 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #0057b7;
   color: #0057b7;
   box-shadow: 5px 5px 0 #0057b7;
 }
 .btn.blue.ghost-shadow-o {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #0057b7;
-  color: #0057b7;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #0057b7;
-  color: #0057b7;
-  box-shadow: 5px 5px 0 #0057b7;
   background-color: #ffffff;
 }
 .btn.darkblue {
@@ -1461,6 +1403,8 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
 }
 .btn.darkblue.ghost {
   background-color: #0057b7;
@@ -1470,11 +1414,13 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #0e4174;
   color: #0e4174;
 }
-.btn.darkblue.ghost-shadow {
+.btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -1482,47 +1428,14 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #0e4174;
   color: #0e4174;
   box-shadow: 5px 5px 0 #0e4174;
 }
 .btn.darkblue.ghost-shadow-o {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #0e4174;
-  color: #0e4174;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #0e4174;
-  color: #0e4174;
-  box-shadow: 5px 5px 0 #0e4174;
   background-color: #ffffff;
 }
 .btn.white {
@@ -1533,6 +1446,8 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
 }
 .btn.white.ghost {
   background-color: #0057b7;
@@ -1542,11 +1457,13 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #ffffff;
   color: #ffffff;
 }
-.btn.white.ghost-shadow {
+.btn.white.ghost-shadow, .btn.white.ghost-shadow-o {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -1554,47 +1471,14 @@ body {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
   background-color: transparent;
   border: 3px solid #ffffff;
   color: #ffffff;
   box-shadow: 5px 5px 0 #ffffff;
 }
 .btn.white.ghost-shadow-o {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-  box-shadow: 5px 5px 0 #ffffff;
   background-color: #ffffff;
 }
 
@@ -1784,27 +1668,27 @@ body {
 }
 
 .triangle-2 {
-  clip-path: polygon(67.03% 14.83%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
-  height: 400px;
+  clip-path: polygon(67.03% 24.83%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
   position: relative;
-  background: linear-gradient(180deg, rgba(26, 76, 141, 0) 60.42%, rgba(14, 65, 116, 0.75) 88.54%), rgba(0, 87, 183, 0.75) url("https://picsum.photos/900/600") center/cover;
+  background: linear-gradient(180deg, rgba(26, 76, 141, 0) 60.42%, rgba(14, 65, 116, 0.75) 88.54%), rgba(0, 87, 183, 0.75) url(https://picsum.photos/900/600) center/cover;
   background-blend-mode: overlay;
   display: flex;
   align-items: center;
+  padding: 6rem 0 2rem;
 }
 .triangle-2 a {
   font-size: 1.25rem;
 }
 
 .triangle-3 {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 31.13% 78.5%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 38% 78.5%, 0% 100%);
   padding: 3rem 0 8rem;
   position: relative;
   background: #0057b7;
   background-blend-mode: overlay;
 }
 .triangle-3 p {
-  font-size: 1.75rem;
+  font-size: 1.95rem;
 }
 
 .triangle-1 .header,

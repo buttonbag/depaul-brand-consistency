@@ -6,6 +6,8 @@
 	padding: 0.5rem 1rem;
 	text-decoration: none;
 	white-space: nowrap;
+	font-family: 'Roboto';
+	text-shadow: none;
 }
 
 @mixin ghost($color: $blue) {
@@ -16,25 +18,12 @@
 }
 
 @mixin shadow($color: $blue) {
-	@include btn;
 	@include ghost($color);
 	box-shadow: 5px 5px 0 $color;
 }
 
-@mixin dark($color) {
-	@include ghost($color);
-}
-
 .btn {
-	background-color: $blue;
-	color: $white;
-	border-radius: 0;
-	font-size: 1.3rem;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
-	white-space: nowrap;
-	font-family: 'Roboto';
-	text-shadow: none;
+	@include btn;
 	&.red {
 		@include btn($red, $white);
 		&.ghost {
@@ -42,8 +31,7 @@
 			&-shadow {
 				@include shadow($red);
 				&-o {
-					@include ghost($red);
-					@include shadow($red);
+					@extend .ghost-shadow;
 					background-color: $white;
 				}
 			}
@@ -56,8 +44,7 @@
 			&-shadow {
 				@include shadow($blue);
 				&-o {
-					@include ghost($blue);
-					@include shadow($blue);
+					@extend .ghost-shadow;
 					background-color: $white;
 				}
 			}
@@ -70,8 +57,7 @@
 			&-shadow {
 				@include shadow($darkblue);
 				&-o {
-					@include ghost($darkblue);
-					@include shadow($darkblue);
+					@extend .ghost-shadow;
 					background-color: $white;
 				}
 			}
@@ -84,8 +70,7 @@
 			&-shadow {
 				@include shadow($white);
 				&-o {
-					@include ghost($white);
-					@include shadow($white);
+					@extend .ghost-shadow;
 					background-color: $white;
 				}
 			}
