@@ -1374,8 +1374,7 @@ body {
   border: 1px solid #565656;
 }
 
-.btn,
-.btn:hover {
+.btn.blue {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -1386,104 +1385,19 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.red,
-.btn:hover.red {
-  background-color: #af272f;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-}
-.btn.red.ghost,
-.btn:hover.red.ghost {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
+.btn.blue.ghost, .btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o {
   background-color: transparent;
-  border: 3px solid #af272f;
-  color: #af272f;
-}
-.btn.red.ghost-shadow, .btn.red.ghost-shadow-o,
-.btn.red.ghost-shadow-o:hover,
-.btn:hover.red.ghost-shadow {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-  background-color: transparent;
-  border: 3px solid #af272f;
-  color: #af272f;
-  box-shadow: 5px 5px 0 #af272f;
-}
-.btn.red.ghost-shadow-o,
-.btn:hover.red.ghost-shadow-o {
-  background-color: #ffffff;
-}
-.btn.blue,
-.btn:hover.blue {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-}
-.btn.blue.ghost,
-.btn:hover.blue.ghost {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-  background-color: transparent;
-  border: 3px solid #0057b7;
   color: #0057b7;
-}
-.btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o,
-.btn.blue.ghost-shadow-o:hover,
-.btn:hover.blue.ghost-shadow {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-  background-color: transparent;
   border: 3px solid #0057b7;
-  color: #0057b7;
+}
+.btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o {
   box-shadow: 5px 5px 0 #0057b7;
 }
-.btn.blue.ghost-shadow-o,
-.btn:hover.blue.ghost-shadow-o {
+.btn.blue.ghost-shadow-o {
   background-color: #ffffff;
 }
-.btn.darkblue,
-.btn:hover.darkblue {
+
+.btn.darkblue {
   background-color: #0e4174;
   color: #ffffff;
   border-radius: 0;
@@ -1494,44 +1408,65 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.darkblue.ghost,
-.btn:hover.darkblue.ghost {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
+.btn.darkblue.ghost, .btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o {
   background-color: transparent;
-  border: 3px solid #0e4174;
   color: #0e4174;
+  border: 3px solid #0e4174;
 }
-.btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o,
-.btn.darkblue.ghost-shadow-o:hover,
-.btn:hover.darkblue.ghost-shadow {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-  background-color: transparent;
-  border: 3px solid #0e4174;
-  color: #0e4174;
+.btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o {
   box-shadow: 5px 5px 0 #0e4174;
 }
-.btn.darkblue.ghost-shadow-o,
-.btn:hover.darkblue.ghost-shadow-o {
+.btn.darkblue.ghost-shadow-o {
   background-color: #ffffff;
 }
-.btn.white,
-.btn:hover.white {
+
+.btn.red {
+  background-color: #af272f;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
+}
+.btn.red.ghost, .btn.red.ghost-shadow, .btn.red.ghost-shadow-o {
+  background-color: transparent;
+  color: #af272f;
+  border: 3px solid #af272f;
+}
+.btn.red.ghost-shadow, .btn.red.ghost-shadow-o {
+  box-shadow: 5px 5px 0 #af272f;
+}
+.btn.red.ghost-shadow-o {
+  background-color: #ffffff;
+}
+
+.btn.gray {
+  background-color: #565656;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
+}
+.btn.gray.ghost, .btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
+  background-color: transparent;
+  color: #565656;
+  border: 3px solid #565656;
+}
+.btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
+  box-shadow: 5px 5px 0 #565656;
+}
+.btn.gray.ghost-shadow-o {
+  background-color: #ffffff;
+}
+
+.btn.white {
   background-color: #ffffff;
   color: #ffffff;
   border-radius: 0;
@@ -1542,40 +1477,15 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.white.ghost,
-.btn:hover.white.ghost {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
+.btn.white.ghost, .btn.white.ghost-shadow, .btn.white.ghost-shadow-o {
   background-color: transparent;
-  border: 3px solid #ffffff;
   color: #ffffff;
+  border: 3px solid #ffffff;
 }
-.btn.white.ghost-shadow, .btn.white.ghost-shadow-o,
-.btn.white.ghost-shadow-o:hover,
-.btn:hover.white.ghost-shadow {
-  background-color: #0057b7;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  color: #ffffff;
+.btn.white.ghost-shadow, .btn.white.ghost-shadow-o {
   box-shadow: 5px 5px 0 #ffffff;
 }
-.btn.white.ghost-shadow-o,
-.btn:hover.white.ghost-shadow-o {
+.btn.white.ghost-shadow-o {
   background-color: #ffffff;
 }
 

@@ -1,75 +1,32 @@
-@mixin btn($bg: $blue, $text: $white) {
-	background-color: $bg;
-	color: $text;
-	border-radius: 0;
-	font-size: 1.3rem;
-	padding: 0.5rem 1rem;
-	text-decoration: none;
-	white-space: nowrap;
-	font-family: 'Roboto';
-	text-shadow: none;
-}
+$colors: (
+	blue: $blue,
+	darkblue: $darkblue,
+	red: $red,
+	gray: $gray,
+	white: $white,
+);
 
-@mixin ghost($color: $blue) {
-	@include btn;
-	background-color: transparent;
-	border: 3px solid $color;
-	color: $color;
-}
+@each $key, $color in $colors {
+	.btn.#{$key} {
+		background-color: $color;
+		color: $white;
+		border-radius: 0;
+		font-size: 1.3rem;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+		white-space: nowrap;
+		font-family: 'Roboto';
+		text-shadow: none;
 
-@mixin shadow($color: $blue) {
-	@include ghost($color);
-	box-shadow: 5px 5px 0 $color;
-}
+		&.ghost {
+			background-color: transparent;
+			color: $color;
+			border: 3px solid $color;
 
-.btn,
-.btn:hover {
-	@include btn;
-	&.red {
-		@include btn($red, $white);
-		&.ghost {
-			@include ghost($red);
 			&-shadow {
-				@include shadow($red);
-				&-o {
-					@extend .ghost-shadow;
-					background-color: $white;
-				}
-			}
-		}
-	}
-	&.blue {
-		@include btn($blue, $white);
-		&.ghost {
-			@include ghost($blue);
-			&-shadow {
-				@include shadow($blue);
-				&-o {
-					@extend .ghost-shadow;
-					background-color: $white;
-				}
-			}
-		}
-	}
-	&.darkblue {
-		@include btn($darkblue, $white);
-		&.ghost {
-			@include ghost($darkblue);
-			&-shadow {
-				@include shadow($darkblue);
-				&-o {
-					@extend .ghost-shadow;
-					background-color: $white;
-				}
-			}
-		}
-	}
-	&.white {
-		@include btn($white, $white);
-		&.ghost {
-			@include ghost($white);
-			&-shadow {
-				@include shadow($white);
+				@extend .ghost;
+				box-shadow: 5px 5px 0 $color;
+
 				&-o {
 					@extend .ghost-shadow;
 					background-color: $white;
