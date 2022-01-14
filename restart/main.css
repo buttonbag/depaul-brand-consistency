@@ -129,8 +129,7 @@ body {
 }
 .bc-subhead {
   text-transform: capitalize;
-  line-height: 1.9;
-  margin: 0 0 0.6rem;
+  margin: 1.9rem 0 0.6rem;
 }
 .bc-border {
   border: 1px solid #0057b7;
@@ -160,6 +159,506 @@ body {
   margin: 0px 0 20px;
   font-size: 2.23rem;
   line-height: 0.7;
+}
+
+.bc-gap-1 {
+  display: block;
+  height: 0.5rem;
+}
+
+.bc-gap-2 {
+  display: block;
+  height: 1rem;
+}
+
+.bc-gap-3 {
+  display: block;
+  height: 1.5rem;
+}
+
+.bc-gap-4 {
+  display: block;
+  height: 2rem;
+}
+
+.bc-gap-5 {
+  display: block;
+  height: 2.5rem;
+}
+
+.bc-gap-6 {
+  display: block;
+  height: 3rem;
+}
+
+.bc-gap-7 {
+  display: block;
+  height: 3.5rem;
+}
+
+.bc-gap-8 {
+  display: block;
+  height: 4rem;
+}
+
+.bc-gap-9 {
+  display: block;
+  height: 4.5rem;
+}
+
+.bc-gap-10 {
+  display: block;
+  height: 5rem;
+}
+
+.bc-gap-11 {
+  display: block;
+  height: 5.5rem;
+}
+
+.bc-gap-12 {
+  display: block;
+  height: 6rem;
+}
+
+.bc-gap-13 {
+  display: block;
+  height: 6.5rem;
+}
+
+.bc-gap-14 {
+  display: block;
+  height: 7rem;
+}
+
+.bc-gap-15 {
+  display: block;
+  height: 7.5rem;
+}
+
+.bc-gap-16 {
+  display: block;
+  height: 8rem;
+}
+
+.bc-gap-17 {
+  display: block;
+  height: 8.5rem;
+}
+
+.bc-gap-18 {
+  display: block;
+  height: 9rem;
+}
+
+.bc-gap-19 {
+  display: block;
+  height: 9.5rem;
+}
+
+.bc-gap-20 {
+  display: block;
+  height: 10rem;
+}
+
+.bc-gap-21 {
+  display: block;
+  height: 10.5rem;
+}
+
+.bc-gap-22 {
+  display: block;
+  height: 11rem;
+}
+
+.bc-gap-23 {
+  display: block;
+  height: 11.5rem;
+}
+
+.bc-gap-24 {
+  display: block;
+  height: 12rem;
+}
+
+.bc-gap-25 {
+  display: block;
+  height: 12.5rem;
+}
+
+.bc-gap-26 {
+  display: block;
+  height: 13rem;
+}
+
+.bc-gap-27 {
+  display: block;
+  height: 13.5rem;
+}
+
+.bc-gap-28 {
+  display: block;
+  height: 14rem;
+}
+
+.bc-gap-29 {
+  display: block;
+  height: 14.5rem;
+}
+
+.bc-gap-30 {
+  display: block;
+  height: 15rem;
+}
+
+.bc-gap-31 {
+  display: block;
+  height: 15.5rem;
+}
+
+.bc-gap-32 {
+  display: block;
+  height: 16rem;
+}
+
+.bc-gap-33 {
+  display: block;
+  height: 16.5rem;
+}
+
+.bc-gap-34 {
+  display: block;
+  height: 17rem;
+}
+
+.bc-gap-35 {
+  display: block;
+  height: 17.5rem;
+}
+
+.bc-gap-36 {
+  display: block;
+  height: 18rem;
+}
+
+.bc-gap-37 {
+  display: block;
+  height: 18.5rem;
+}
+
+.bc-gap-38 {
+  display: block;
+  height: 19rem;
+}
+
+.bc-gap-39 {
+  display: block;
+  height: 19.5rem;
+}
+
+.bc-gap-40 {
+  display: block;
+  height: 20rem;
+}
+
+.bc-gap-41 {
+  display: block;
+  height: 20.5rem;
+}
+
+.bc-gap-42 {
+  display: block;
+  height: 21rem;
+}
+
+.bc-gap-43 {
+  display: block;
+  height: 21.5rem;
+}
+
+.bc-gap-44 {
+  display: block;
+  height: 22rem;
+}
+
+.bc-gap-45 {
+  display: block;
+  height: 22.5rem;
+}
+
+.bc-gap-46 {
+  display: block;
+  height: 23rem;
+}
+
+.bc-gap-47 {
+  display: block;
+  height: 23.5rem;
+}
+
+.bc-gap-48 {
+  display: block;
+  height: 24rem;
+}
+
+.bc-gap-49 {
+  display: block;
+  height: 24.5rem;
+}
+
+.bc-gap-50 {
+  display: block;
+  height: 25rem;
+}
+
+.bc-gap-51 {
+  display: block;
+  height: 25.5rem;
+}
+
+.bc-gap-52 {
+  display: block;
+  height: 26rem;
+}
+
+.bc-gap-53 {
+  display: block;
+  height: 26.5rem;
+}
+
+.bc-gap-54 {
+  display: block;
+  height: 27rem;
+}
+
+.bc-gap-55 {
+  display: block;
+  height: 27.5rem;
+}
+
+.bc-gap-56 {
+  display: block;
+  height: 28rem;
+}
+
+.bc-gap-57 {
+  display: block;
+  height: 28.5rem;
+}
+
+.bc-gap-58 {
+  display: block;
+  height: 29rem;
+}
+
+.bc-gap-59 {
+  display: block;
+  height: 29.5rem;
+}
+
+.bc-gap-60 {
+  display: block;
+  height: 30rem;
+}
+
+.bc-gap-61 {
+  display: block;
+  height: 30.5rem;
+}
+
+.bc-gap-62 {
+  display: block;
+  height: 31rem;
+}
+
+.bc-gap-63 {
+  display: block;
+  height: 31.5rem;
+}
+
+.bc-gap-64 {
+  display: block;
+  height: 32rem;
+}
+
+.bc-gap-65 {
+  display: block;
+  height: 32.5rem;
+}
+
+.bc-gap-66 {
+  display: block;
+  height: 33rem;
+}
+
+.bc-gap-67 {
+  display: block;
+  height: 33.5rem;
+}
+
+.bc-gap-68 {
+  display: block;
+  height: 34rem;
+}
+
+.bc-gap-69 {
+  display: block;
+  height: 34.5rem;
+}
+
+.bc-gap-70 {
+  display: block;
+  height: 35rem;
+}
+
+.bc-gap-71 {
+  display: block;
+  height: 35.5rem;
+}
+
+.bc-gap-72 {
+  display: block;
+  height: 36rem;
+}
+
+.bc-gap-73 {
+  display: block;
+  height: 36.5rem;
+}
+
+.bc-gap-74 {
+  display: block;
+  height: 37rem;
+}
+
+.bc-gap-75 {
+  display: block;
+  height: 37.5rem;
+}
+
+.bc-gap-76 {
+  display: block;
+  height: 38rem;
+}
+
+.bc-gap-77 {
+  display: block;
+  height: 38.5rem;
+}
+
+.bc-gap-78 {
+  display: block;
+  height: 39rem;
+}
+
+.bc-gap-79 {
+  display: block;
+  height: 39.5rem;
+}
+
+.bc-gap-80 {
+  display: block;
+  height: 40rem;
+}
+
+.bc-gap-81 {
+  display: block;
+  height: 40.5rem;
+}
+
+.bc-gap-82 {
+  display: block;
+  height: 41rem;
+}
+
+.bc-gap-83 {
+  display: block;
+  height: 41.5rem;
+}
+
+.bc-gap-84 {
+  display: block;
+  height: 42rem;
+}
+
+.bc-gap-85 {
+  display: block;
+  height: 42.5rem;
+}
+
+.bc-gap-86 {
+  display: block;
+  height: 43rem;
+}
+
+.bc-gap-87 {
+  display: block;
+  height: 43.5rem;
+}
+
+.bc-gap-88 {
+  display: block;
+  height: 44rem;
+}
+
+.bc-gap-89 {
+  display: block;
+  height: 44.5rem;
+}
+
+.bc-gap-90 {
+  display: block;
+  height: 45rem;
+}
+
+.bc-gap-91 {
+  display: block;
+  height: 45.5rem;
+}
+
+.bc-gap-92 {
+  display: block;
+  height: 46rem;
+}
+
+.bc-gap-93 {
+  display: block;
+  height: 46.5rem;
+}
+
+.bc-gap-94 {
+  display: block;
+  height: 47rem;
+}
+
+.bc-gap-95 {
+  display: block;
+  height: 47.5rem;
+}
+
+.bc-gap-96 {
+  display: block;
+  height: 48rem;
+}
+
+.bc-gap-97 {
+  display: block;
+  height: 48.5rem;
+}
+
+.bc-gap-98 {
+  display: block;
+  height: 49rem;
+}
+
+.bc-gap-99 {
+  display: block;
+  height: 49.5rem;
+}
+
+.bc-gap-100 {
+  display: block;
+  height: 50rem;
 }
 
 .dpu-bg-blue {
@@ -1669,9 +2168,10 @@ body {
 .triangle-1 .btn {
   font-size: 2.35rem !important;
   text-shadow: 2px 2px #0e4174;
-  background: rgba(14, 65, 116, 0.75);
+  background: rgba(9, 40, 70, 0.75);
   background-blend-mode: multiply;
   border: 3px solid #ffffff;
+  color: #ffffff;
 }
 
 .triangle-2 {
@@ -1805,6 +2305,35 @@ body {
 
 .img-container {
   background: url(https://via.placeholder.com/1200) center/cover;
+}
+
+.card {
+  border-radius: 0;
+  border: 1px solid #0057b7;
+}
+.card .card-title {
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+.card .card-body {
+  padding: 2rem 2rem;
+}
+.card .card-body .card-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.card .card-footer {
+  border-radius: 0;
+  background: #ffffff;
+  border-top: 1px solid #0057b7;
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+.card .card-footer:hover {
+  background: rgba(0, 87, 183, 0.75);
+  color: #ffffff;
 }
 
 .accordion-item,

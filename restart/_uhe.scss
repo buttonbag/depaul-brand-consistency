@@ -138,9 +138,10 @@ $gradient: linear-gradient(
 	.btn {
 		font-size: 2.35rem !important;
 		text-shadow: 2px 2px $darkblue;
-		background: rgba($darkblue, 0.75);
+		background: rgba(darken($darkblue, 10%), 0.75);
 		background-blend-mode: multiply;
 		border: 3px solid $white;
+		color: $white;
 	}
 }
 

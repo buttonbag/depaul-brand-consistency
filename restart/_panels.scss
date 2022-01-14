@@ -106,3 +106,33 @@
 .img-container {
 	background: url(https://via.placeholder.com/1200) center / cover;
 }
+
+//cards
+.card {
+	border-radius: 0;
+	@include border(1px, $blue);
+	.card-title {
+		margin: 0 0 0.5rem;
+		padding: 0;
+	}
+	.card-body {
+		padding: 2rem 2rem;
+		.card-text {
+			font-size: 1.3rem;
+			line-height: 1.5;
+		}
+	}
+	.card-footer {
+		border-radius: 0;
+		background: $white;
+		border-top: 1px solid $blue;
+		font-family: 'Roboto';
+		font-size: 1.3rem;
+		text-decoration: none;
+		padding: 1rem;
+		&:hover {
+			background: rgb($blue, 0.75);
+			color: $white;
+		}
+	}
+}
