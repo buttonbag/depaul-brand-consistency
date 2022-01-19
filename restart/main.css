@@ -2154,18 +2154,22 @@ body {
   text-decoration: underline;
 }
 
-.info {
+.stats {
+  display: flex;
+}
+.stats .info {
   padding: 0 1rem;
   flex: 1 1 auto;
   justify-content: center;
   display: flex;
   flex-flow: column;
 }
-.info .title {
-  font-size: 2rem;
+.stats .info .title {
+  font-family: "roboto";
+  font-size: 1.75rem;
   margin: 0;
 }
-.info .detail {
+.stats .info .detail {
   font-size: 1rem;
   margin: 0;
 }
@@ -2364,6 +2368,7 @@ body {
   color: #0e4174;
   background: white;
   justify-content: space-between;
+  overflow: hidden;
 }
 .accordion-item .accordion-header .accordion-button .bi.bi-plus,
 .accordion-item:last-child .accordion-header .accordion-button .bi.bi-plus {

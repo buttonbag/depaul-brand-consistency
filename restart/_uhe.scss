@@ -124,21 +124,24 @@ $gradient: linear-gradient(
 }
 
 // icons
-.info {
-	padding: 0 1rem;
-	flex: 1 1 auto;
-	justify-content: center;
+.stats {
 	display: flex;
-	flex-flow: column;
-	.title {
-		font-size: 2rem;
-		margin: 0;
+	.info {
+		padding: 0 1rem;
+		flex: 1 1 auto;
+		justify-content: center;
+		display: flex;
+		flex-flow: column;
+		.title {
+			font-family: 'roboto';
+			font-size: 1.75rem;
+			margin: 0;
+		}
+		.detail {
+			font-size: 1rem;
+			margin: 0;
+		}
 	}
-	.detail {
-		font-size: 1rem;
-		margin: 0;
-	}
-	
 }
 
 //triangle one
