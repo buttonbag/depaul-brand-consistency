@@ -123,6 +123,24 @@ $gradient: linear-gradient(
 	}
 }
 
+// icons
+.info {
+	padding: 0 1rem;
+	flex: 1 1 auto;
+	justify-content: center;
+	display: flex;
+	flex-flow: column;
+	.title {
+		font-size: 2rem;
+		margin: 0;
+	}
+	.detail {
+		font-size: 1rem;
+		margin: 0;
+	}
+	
+}
+
 //triangle one
 .triangle-1 {
 	clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);

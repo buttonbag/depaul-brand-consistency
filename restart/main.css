@@ -2154,6 +2154,22 @@ body {
   text-decoration: underline;
 }
 
+.info {
+  padding: 0 1rem;
+  flex: 1 1 auto;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
+}
+.info .title {
+  font-size: 2rem;
+  margin: 0;
+}
+.info .detail {
+  font-size: 1rem;
+  margin: 0;
+}
+
 .triangle-1 {
   clip-path: polygon(64.76% 0px, 100% 15.5%, 100% 100%, 0px 100%, 0% 17%);
   padding: 8rem 0;
