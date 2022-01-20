@@ -1,9 +1,9 @@
 $colors: (
-	blue: $blue,
-	darkblue: $darkblue,
-	red: $red,
-	gray: $gray,
-	white: $white,
+	'blue': $blue,
+	'darkblue': $darkblue,
+	'red': $red,
+	'gray': $gray,
+	'white': $white,
 );
 
 @each $key, $color in $colors {
