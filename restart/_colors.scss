@@ -20,40 +20,40 @@
 		}
 	}
 	&-darkblue {
-		@include bg($darkblue);
+		@include bg($secondary-color);
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color($darkblue, 100%-$tint);
+				@include color($secondary-color, 100%-$tint);
 				&-t {
-					@include transparent($darkblue, calc($tint/100));
+					@include transparent($secondary-color, calc($tint/100));
 					.header {
-						text-shadow: 2px 2px 0px darken($darkblue, 12%);
+						text-shadow: 2px 2px 0px darken($secondary-color, 12%);
 						&.line {
-							box-shadow: 0px 2px 0px darken($darkblue, 12%) !important;
+							box-shadow: 0px 2px 0px darken($secondary-color, 12%) !important;
 						}
 					}
 					.content {
-						text-shadow: 2px 2px 0px darken($darkblue, 12%);
+						text-shadow: 2px 2px 0px darken($secondary-color, 12%);
 					}
 				}
 			}
 		}
 	}
 	&-red {
-		@include bg($red);
+		@include bg($accent-color);
 		@each $tint in $tints {
 			&-#{$tint} {
-				@include color($red, 100%-$tint);
+				@include color($accent-color, 100%-$tint);
 				&-t {
-					@include transparent($red, calc($tint/100));
+					@include transparent($accent-color, calc($tint/100));
 					.header {
-						text-shadow: 2px 2px 0px darken($red, 12%);
+						text-shadow: 2px 2px 0px darken($accent-color, 12%);
 						&.line {
-							box-shadow: 0px 2px 0px darken($red, 12%) !important;
+							box-shadow: 0px 2px 0px darken($accent-color, 12%) !important;
 						}
 					}
 					.content {
-						text-shadow: 2px 2px 0px darken($red, 12%);
+						text-shadow: 2px 2px 0px darken($accent-color, 12%);
 					}
 				}
 			}
@@ -117,10 +117,10 @@
 		color: rgba($primary-color, 1);
 	}
 	&-red {
-		color: rgba($red, 1);
+		color: rgba($accent-color, 1);
 	}
 	&-darkblue {
-		color: rgba($darkblue, 1);
+		color: rgba($secondary-color, 1);
 	}
 	&-gray {
 		color: rgba($gray, 1);
@@ -135,10 +135,10 @@
 		@include border(1px, $primary-color);
 	}
 	&-darkblue {
-		@include border(1px, $darkblue);
+		@include border(1px, $secondary-color);
 	}
 	&-red {
-		@include border(1px, $red);
+		@include border(1px, $accent-color);
 	}
 	&-gray {
 		@include border(1px, $gray);

@@ -2,7 +2,7 @@
 $gradient: linear-gradient(
 		180deg,
 		rgba(26, 76, 141, 0) 60.42%,
-		rgba($darkblue, 0.75) 88.54%
+		rgba($secondary-color, 0.75) 88.54%
 	),
 	rgba($primary-color, 0.75);
 
@@ -82,7 +82,7 @@ $gradient: linear-gradient(
 			}
 		}
 		.cta {
-			background: rgba($darkblue, 1);
+			background: rgba($secondary-color, 1);
 			z-index: 80;
 			position: relative;
 			display: flex;
@@ -156,8 +156,8 @@ $gradient: linear-gradient(
 
 	.btn {
 		font-size: 2.35rem !important;
-		text-shadow: 2px 2px $darkblue;
-		background: rgba(darken($darkblue, 10%), 0.75);
+		text-shadow: 2px 2px $secondary-color;
+		background: rgba(darken($secondary-color, 10%), 0.75);
 		background-blend-mode: multiply;
 		border: 3px solid $white;
 		color: $white;

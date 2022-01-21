@@ -1,8 +1,8 @@
 @import 'mixins';
 // root
 $primary-color: #0057b7;
-$darkblue: #0e4174;
-$red: #af272f;
+$secondary-color: #0e4174;
+$accent-color: #af272f;
 $white: #ffffff;
 $gray: #565656;
 $tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
@@ -10,8 +10,8 @@ $tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
 
 :root {
 	--primary-color: #{$primary-color};
-	--secondary-color: #{$darkblue};
-	--accent-color: #{$red};
+	--secondary-color: #{$secondary-color};
+	--accent-color: #{$accent-color};
 	--white: #{$white};
 	--gray: #{$gray};
 
@@ -66,13 +66,13 @@ h3 {
 	font-weight: 700;
 	color: $primary-color;
 	&.rollup {
-		border-bottom: 3px solid $darkblue;
+		border-bottom: 3px solid $secondary-color;
 		padding-bottom: 1rem;
 	}
 	&.homepage {
 		font-size: 58px;
 		text-transform: uppercase;
-		color: $darkblue;
+		color: $secondary-color;
 	}
 }
 h4,
