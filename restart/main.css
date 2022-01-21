@@ -2094,8 +2094,6 @@ body {
   }
 }
 #hero-container #text-content .hero-text .hero-content .hero-title h1 {
-  font-family: "DIN Pro bold";
-  font-weight: normal;
   font-size: 4rem;
   color: #fff;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
@@ -2141,7 +2139,7 @@ body {
   padding-top: 11rem;
 }
 #hero-container #text-content .cta p {
-  font-family: "DIN Pro";
+  font-family: "DINPro";
   font-weight: normal;
   font-size: 1.75rem;
   margin: 0;
