@@ -29,7 +29,7 @@ $gradient: linear-gradient(
 	// text content
 	#text-content {
 		position: relative;
-		top: -190px;
+		margin-top: -190px;
 		@include screen-max($screen-md) {
 			top: 0;
 			display: block !important;

@@ -2042,7 +2042,7 @@ body {
 }
 #hero-container #text-content {
   position: relative;
-  top: -190px;
+  margin-top: -190px;
 }
 @media screen and (max-width: 820px) {
   #hero-container #text-content {
