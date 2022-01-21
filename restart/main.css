@@ -1,7 +1,7 @@
 :root {
-  --blue: #0057b7;
-  --darkblue: #0e4174;
-  --red: #af272f;
+  --primary-color: #0057b7;
+  --secondary-color: #0e4174;
+  --accent-color: #af272f;
   --white: #ffffff;
   --gray: #565656;
   -webkit-font-smoothing: antialiased;

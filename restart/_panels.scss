@@ -54,7 +54,7 @@
 	overflow: hidden;
 	position: relative;
 	&::before {
-		background: rgba($blue, 0.5);
+		background: rgba($primary-color, 0.5);
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -110,7 +110,7 @@
 //cards
 .card {
 	border-radius: 0;
-	@include border(1px, $blue);
+	@include border(1px, $primary-color);
 	.card-title {
 		margin: 0 0 0.5rem;
 		padding: 0;
@@ -125,13 +125,13 @@
 	.card-footer {
 		border-radius: 0;
 		background: $white;
-		border-top: 1px solid $blue;
+		border-top: 1px solid $primary-color;
 		font-family: 'Roboto';
 		font-size: 1.3rem;
 		text-decoration: none;
 		padding: 1rem;
 		&:hover {
-			background: rgb($blue, 0.75);
+			background: rgb($primary-color, 0.75);
 			color: $white;
 		}
 	}

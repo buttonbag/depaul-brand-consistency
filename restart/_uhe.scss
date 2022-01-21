@@ -4,7 +4,7 @@ $gradient: linear-gradient(
 		rgba(26, 76, 141, 0) 60.42%,
 		rgba($darkblue, 0.75) 88.54%
 	),
-	rgba($blue, 0.75);
+	rgba($primary-color, 0.75);
 
 // hero area
 #hero-container {
@@ -52,20 +52,20 @@ $gradient: linear-gradient(
 					padding: 0;
 					flex: 0 0 auto;
 					max-width: 60%;
-					background: rgba($blue, 1);
+					background: rgba($primary-color, 1);
 				}
 				@include screen-max($screen-sm) {
 					max-width: 100%;
 				}
 				.hero-title {
-					background: rgba($blue, 0.75);
+					background: rgba($primary-color, 0.75);
 					z-index: 100;
 					position: relative;
 					padding: 1rem 1.5rem;
 					width: 595px;
 					@include screen-max($screen-md) {
 						width: 100%;
-						background: rgba($blue, 1);
+						background: rgba($primary-color, 1);
 					}
 					h1 {
 						font-size: 4rem;
@@ -188,7 +188,7 @@ $gradient: linear-gradient(
 	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 38% 78.5%, 0% 100%);
 	padding: 3rem 0 8rem;
 	position: relative;
-	background: rgba($blue, 1);
+	background: rgba($primary-color, 1);
 	background-blend-mode: overlay;
 	p {
 		font-size: 1.95rem;

@@ -1,6 +1,6 @@
 @import 'mixins';
 // root
-$blue: #0057b7;
+$primary-color: #0057b7;
 $darkblue: #0e4174;
 $red: #af272f;
 $white: #ffffff;
@@ -9,9 +9,9 @@ $tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
 	10;
 
 :root {
-	--blue: #{$blue};
-	--darkblue: #{$darkblue};
-	--red: #{$red};
+	--primary-color: #{$primary-color};
+	--secondary-color: #{$darkblue};
+	--accent-color: #{$red};
 	--white: #{$white};
 	--gray: #{$gray};
 
@@ -64,7 +64,7 @@ h2,
 h3 {
 	font-family: 'DINPro';
 	font-weight: 700;
-	color: $blue;
+	color: $primary-color;
 	&.rollup {
 		border-bottom: 3px solid $darkblue;
 		padding-bottom: 1rem;
