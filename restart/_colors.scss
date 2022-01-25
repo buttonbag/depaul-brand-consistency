@@ -1,146 +1,46 @@
-.dpu-bg {
-	&-blue {
-		@include bg($primary-color);
-		@each $tint in $tints {
-			&-#{$tint} {
-				@include color($primary-color, 100%-$tint);
-				&-t {
-					@include transparent($primary-color, calc($tint/100));
-					.header {
-						text-shadow: 2px 2px 0px darken($primary-color, 12%);
-						&.line {
-							box-shadow: 0px 2px 0px darken($primary-color, 12%) !important;
+$colors: (
+	'primary': $primary-color,
+	'secondary': $secondary-color,
+	'accent': $accent-color,
+	'white': $white,
+	'gray': $gray,
+);
+$tints: 100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15,
+	10;
+
+@each $key, $color in $colors {
+	.dpu-bg {
+		&-#{$key} {
+			@include bg($color);
+			@each $tint in $tints {
+				&-#{$tint} {
+					@include color($color, 100%-$tint);
+					&-t {
+						@include transparent($color, calc($tint/100));
+						.header {
+							text-shadow: 2px 2px 0px darken($color, 12%);
+							&.line {
+								box-shadow: 0px 2px 0px darken($color, 12%) !important;
+							}
 						}
-					}
-					.content {
-						text-shadow: 2px 2px 0px darken($primary-color, 12%);
+						.content {
+							text-shadow: 2px 2px 0px darken($color, 12%);
+						}
 					}
 				}
 			}
 		}
 	}
-	&-darkblue {
-		@include bg($secondary-color);
-		@each $tint in $tints {
-			&-#{$tint} {
-				@include color($secondary-color, 100%-$tint);
-				&-t {
-					@include transparent($secondary-color, calc($tint/100));
-					.header {
-						text-shadow: 2px 2px 0px darken($secondary-color, 12%);
-						&.line {
-							box-shadow: 0px 2px 0px darken($secondary-color, 12%) !important;
-						}
-					}
-					.content {
-						text-shadow: 2px 2px 0px darken($secondary-color, 12%);
-					}
-				}
-			}
+
+	.dpu-text {
+		&-#{$key} {
+			color: rgba($color, 1);
 		}
 	}
-	&-red {
-		@include bg($accent-color);
-		@each $tint in $tints {
-			&-#{$tint} {
-				@include color($accent-color, 100%-$tint);
-				&-t {
-					@include transparent($accent-color, calc($tint/100));
-					.header {
-						text-shadow: 2px 2px 0px darken($accent-color, 12%);
-						&.line {
-							box-shadow: 0px 2px 0px darken($accent-color, 12%) !important;
-						}
-					}
-					.content {
-						text-shadow: 2px 2px 0px darken($accent-color, 12%);
-					}
-				}
-			}
+
+	.dpu-border {
+		&-#{$key} {
+			@include border(1px, $color);
 		}
-	}
-	&-white {
-		@include bg($white);
-	}
-	&-gray {
-		@include bg($gray);
-		@each $tint in $tints {
-			&-#{$tint} {
-				@include color($gray, 100%-$tint);
-				&-t {
-					@include transparent($gray, calc($tint/100));
-					.header {
-						text-shadow: 2px 2px 0px darken($gray, 12%);
-						&.line {
-							box-shadow: 0px 2px 0px darken($gray, 12%) !important;
-						}
-					}
-					.content {
-						text-shadow: 2px 2px 0px darken($gray, 12%);
-					}
-				}
-			}
-		}
-	}
-}
-
-.tint {
-	flex: 1 1 auto;
-	margin: 1px;
-	display: flex;
-	justify-content: space-between;
-	flex-flow: column;
-	height: 150px;
-
-	.tint-label {
-		display: flex;
-		justify-content: flex-end;
-		color: $gray;
-		font-size: 0.75rem;
-	}
-	.bc-blue-tint {
-		height: 5rem;
-		margin: 1px 0;
-	}
-	.bc-red-tint {
-		height: 3rem;
-		margin: 1px 0;
-	}
-	.bc-darkblue-tint {
-		height: 4rem;
-		margin: 1px 0;
-	}
-}
-
-.text {
-	&-blue {
-		color: rgba($primary-color, 1);
-	}
-	&-red {
-		color: rgba($accent-color, 1);
-	}
-	&-darkblue {
-		color: rgba($secondary-color, 1);
-	}
-	&-gray {
-		color: rgba($gray, 1);
-	}
-	&-white {
-		color: rgba($white, 1);
-	}
-}
-
-.border {
-	&-blue {
-		@include border(1px, $primary-color);
-	}
-	&-darkblue {
-		@include border(1px, $secondary-color);
-	}
-	&-red {
-		@include border(1px, $accent-color);
-	}
-	&-gray {
-		@include border(1px, $gray);
 	}
 }

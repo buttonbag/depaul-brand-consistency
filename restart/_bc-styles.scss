@@ -33,7 +33,7 @@ body {
 		border: 1px solid $primary-color;
 	}
 
-	&-border-red-bottom {
+	&-border-accent-bottom {
 		border-bottom: 1px solid $accent-color;
 		margin-bottom: 1rem;
 	}
@@ -58,6 +58,33 @@ body {
 		&:nth-child(1n + 2) {
 			margin-left: 1rem;
 		}
+	}
+}
+.tint {
+	flex: 1 1 auto;
+	margin: 1px;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column;
+	height: 150px;
+
+	.tint-label {
+		display: flex;
+		justify-content: flex-end;
+		color: $gray;
+		font-size: 0.75rem;
+	}
+	.bc-primary-tint {
+		height: 5rem;
+		margin: 1px 0;
+	}
+	.bc-accent-tint {
+		height: 3rem;
+		margin: 1px 0;
+	}
+	.bc-secondary-tint {
+		height: 4rem;
+		margin: 1px 0;
 	}
 }
 
