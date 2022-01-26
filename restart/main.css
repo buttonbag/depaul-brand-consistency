@@ -2173,7 +2173,7 @@ body {
   border: 1px solid #565656;
 }
 
-.btn.blue {
+.btn.primary {
   background-color: #0057b7;
   color: #ffffff;
   border-radius: 0;
@@ -2184,19 +2184,19 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.blue.ghost, .btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o {
+.btn.primary.ghost, .btn.primary.ghost-shadow, .btn.primary.ghost-shadow-o {
   background-color: transparent;
   color: #0057b7;
   border: 3px solid #0057b7;
 }
-.btn.blue.ghost-shadow, .btn.blue.ghost-shadow-o {
+.btn.primary.ghost-shadow, .btn.primary.ghost-shadow-o {
   box-shadow: 5px 5px 0 #0057b7;
 }
-.btn.blue.ghost-shadow-o {
+.btn.primary.ghost-shadow-o {
   background-color: #ffffff;
 }
 
-.btn.darkblue {
+.btn.secondary {
   background-color: #0e4174;
   color: #ffffff;
   border-radius: 0;
@@ -2207,19 +2207,19 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.darkblue.ghost, .btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o {
+.btn.secondary.ghost, .btn.secondary.ghost-shadow, .btn.secondary.ghost-shadow-o {
   background-color: transparent;
   color: #0e4174;
   border: 3px solid #0e4174;
 }
-.btn.darkblue.ghost-shadow, .btn.darkblue.ghost-shadow-o {
+.btn.secondary.ghost-shadow, .btn.secondary.ghost-shadow-o {
   box-shadow: 5px 5px 0 #0e4174;
 }
-.btn.darkblue.ghost-shadow-o {
+.btn.secondary.ghost-shadow-o {
   background-color: #ffffff;
 }
 
-.btn.red {
+.btn.accent {
   background-color: #af272f;
   color: #ffffff;
   border-radius: 0;
@@ -2230,38 +2230,15 @@ body {
   font-family: "Roboto";
   text-shadow: none;
 }
-.btn.red.ghost, .btn.red.ghost-shadow, .btn.red.ghost-shadow-o {
+.btn.accent.ghost, .btn.accent.ghost-shadow, .btn.accent.ghost-shadow-o {
   background-color: transparent;
   color: #af272f;
   border: 3px solid #af272f;
 }
-.btn.red.ghost-shadow, .btn.red.ghost-shadow-o {
+.btn.accent.ghost-shadow, .btn.accent.ghost-shadow-o {
   box-shadow: 5px 5px 0 #af272f;
 }
-.btn.red.ghost-shadow-o {
-  background-color: #ffffff;
-}
-
-.btn.gray {
-  background-color: #565656;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 1.3rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-  font-family: "Roboto";
-  text-shadow: none;
-}
-.btn.gray.ghost, .btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
-  background-color: transparent;
-  color: #565656;
-  border: 3px solid #565656;
-}
-.btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
-  box-shadow: 5px 5px 0 #565656;
-}
-.btn.gray.ghost-shadow-o {
+.btn.accent.ghost-shadow-o {
   background-color: #ffffff;
 }
 
@@ -2285,6 +2262,29 @@ body {
   box-shadow: 5px 5px 0 #ffffff;
 }
 .btn.white.ghost-shadow-o {
+  background-color: #ffffff;
+}
+
+.btn.gray {
+  background-color: #565656;
+  color: #ffffff;
+  border-radius: 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Roboto";
+  text-shadow: none;
+}
+.btn.gray.ghost, .btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
+  background-color: transparent;
+  color: #565656;
+  border: 3px solid #565656;
+}
+.btn.gray.ghost-shadow, .btn.gray.ghost-shadow-o {
+  box-shadow: 5px 5px 0 #565656;
+}
+.btn.gray.ghost-shadow-o {
   background-color: #ffffff;
 }
 

@@ -1,10 +1,10 @@
-$colors: (
-	'blue': $primary-color,
-	'darkblue': $secondary-color,
-	'red': $accent-color,
-	'gray': $gray,
-	'white': $white,
-);
+// $colors: (
+// 	'blue': $primary-color,
+// 	'darkblue': $secondary-color,
+// 	'red': $accent-color,
+// 	'gray': $gray,
+// 	'white': $white,
+// );
 
 @each $key, $color in $colors {
 	.btn.#{$key} {
