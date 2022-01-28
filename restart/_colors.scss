@@ -5,6 +5,19 @@
 			@each $tint in $tints {
 				&-#{$tint} {
 					@include color($color, 100%-$tint);
+					&::after {
+						content: '#{scale-color($color, $lightness: 100%-$tint)}';
+						font-size: 0.8rem;
+						@include screen-max($screen-md) {
+							display: none;
+						}
+
+						@if ($tint > 50) {
+							color: $white;
+						} @else {
+							color: black;
+						}
+					}
 					&-t {
 						@include transparent($color, calc($tint/100));
 						.header {
