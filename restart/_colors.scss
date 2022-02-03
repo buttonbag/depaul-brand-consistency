@@ -19,7 +19,7 @@
 						}
 					}
 					&-t {
-						@include transparent($color, calc($tint/100));
+						@include transparent(scale-color($color, $lightness: 100%-$tint), calc($tint/100));
 						.header {
 							text-shadow: 2px 2px 0px darken($color, 12%);
 							&.line {
